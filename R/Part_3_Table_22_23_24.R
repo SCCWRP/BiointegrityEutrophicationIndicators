@@ -237,7 +237,7 @@ mydf_bs <- mydf |>
 table_23 <- mydf_bs |>
   transmute(
     `Threshold type` = Type2,
-    Population = Type,
+    Population = if_else(Type == 'Reference', 'Wadeable (standard)', Type),
     Indicator = case_when(
       name == "AFDM_mg_m2" ~ "AFDM (mg/m2)",
       name == "Chl-a_ug_cm2" ~ "Chl-a (ug/cm2)",
