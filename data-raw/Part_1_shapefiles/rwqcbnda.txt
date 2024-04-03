@@ -1,0 +1,108 @@
+LIBRARY       : CA
+LAYER NAME    : RWQCBDIST
+COVERAGE NAME : RWQCBNDA
+
+COVERAGE DESCRIPTION:
+  
+The boundaries of the 9 California Regional Water Quality Control Boards are 
+derived from watershed boundaries in the The California Watershed Map (CALWATER
+version 2.2). Calwater 2.2 is a set of standardized watershed boundaries meeting 
+standardized delineation criteria.  
+
+
+VITAL STATISTICS:
+
+Datum:     			   NAD 27
+Projection:    		   Albers
+Units:			   Meters
+1st Std. Parallel:         34 00 00 (34.0 degrees N)
+2nd Std. Parallel:         40 30 00 (40.5 degrees N)
+Longitude of Origin:      -120 00 00 (120.0 degrees W)
+Latitude of Origin:        00 00 00 (0.0 degrees)
+False Easting (X shift):   0
+False Northing (Y shift): -4,000,000
+
+Source:                    1:24,000 USGS Quad Maps 
+Source Media:              Paper
+Source Projection:         Polyconic
+Source Units:              Meters 
+Source Scale:              1:24,000 
+Capture Method:            Original digitizing by J. Kellogg 
+                           and staff (Tierra Data Systems)
+Conversion Software:       ARC/Info rev 7.2.1 
+Data Structure:            Vector
+ARC/INFO Coverage Type:    Polygon, Line (Network)
+ARC/INFO Precision:        Double 
+ARC/INFO Tolerances:       Fuzzy tolerance - 2 meters
+                           Dangle Length   - .1 meters
+ 
+Data Updated:              1998
+    
+DATA DICTIONARY:
+  
+DATAFILE NAME: RWQCBNDA.PAT
+
+RECORD LENGTH: 60 
+  
+COLUMN ITEM NAME  WIDTH OUTPUT  TYPE N.DEC
+------------------------------------------
+
+1  AREA         8    18     F      5  
+9  PERIMETER    8    18     F      5  
+17 RWQCBNDA#    4     5     B	  -
+21 RWQCBNDA-ID  4     5     B	  -
+25 RB           1     1     I      -  
+26 RBNAME      35    35     C      -
+
+AREA      : The area of the polygon in square coverage units.
+
+PERIMETER : The length of the polygon perimeter of the polygon
+              in coverage units.
+
+RWQCBNDA# : The software-assigned unique integer identification number.
+
+RWQCBNDA-ID : A user-assigned identification number.
+ 
+RB        : Regional Water Quality Control Board Number (1-9)
+
+RBNAME    : Regional Water Quality Control Board Name
+
+RB  RBNAME
+--  -------
+ 1   North Coast        
+ 2   San Francisco Bay  
+ 3   Central Coast      
+ 4   Los Angeles        
+ 5   Sacramento Basin 
+ 5   San Joaquin      
+ 5   Tulare Lake       
+ 6   Lahontan     
+ 7   Colorado River   
+ 8   Santa Ana        
+ 9   San Diego        
+
+DATA QUALITY ASSESSMENT:
+  
+The following are subjective comments regarding this data.
+
+The revised Regional Water Quality Control Board boundaries are derived from CALWATER
+version 2.2. The data quality assessment for CALWATER 2.2 also applies to this coverage
+and is as follows:
+"CALWATER boundaries were digitized on a 1:24,000-scale base and thus very accurately
+divide surface water features depicted on 1:100,000-scale Digital Line Graph 
+hydrography.  However, CALWATER delineations are primarily designed to be 
+administrative reporting units, and the boundaries should not be used to define
+authoritative drainage area above a given point as a portion of their definition 
+includes non-physical boundaries, particularly in valley floor and urbanized coastal 
+regions. Attribute completeness is good. Compatibility with existing state and federal
+watershed delineations is good, except where explicitly different boundary 
+configurations are applied."
+ 
+DATA CONTACT:
+  
+Contact Name: Ray McDowell
+                   State Water Resource Control Board - OIT
+Contact's Phone: 916-654-9990
+
+DOCUMENTATION DATES: January 2001
+

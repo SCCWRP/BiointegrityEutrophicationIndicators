@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="http://gis.ca.gov/fgdc_esri.xsl"?>
+<metadata xmlns:casil="http://gis.ca.gov/" 
+	  xml:lang="en" 
+casil:resource="http://gis.ca.gov/catalog/BrowseRecord.epl?id=261">
+  <idinfo>
+    <citation>
+      <citeinfo>
+	<origin>Teale GIS Solutions Group</origin>
+	<pubdate>1997-01-01</pubdate>
+	<edition></edition>
+	<title>Regional Water Quality Contol Boards</title>
+	<geoform></geoform>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>The 'RWQBDIST' layer shows the boundaries of the Regional Water Quality Control Boards(9) in California. These district boundaries coincide with the boundaries of some ofthe hydrologic study areas delineated by the Department of Water Resources. See the 'GRDWATERBASIN' layer documentation for a fuller explanation of ground water basins and hydrologic study areas.</abstract>
+      <purpose>To provide a visual image of the boundaries of the Regional Water Quality Control Boards in California for use in business and reports.</purpose>
+      <supplinf></supplinf>
+      <langdata>English</langdata></descript>
+    <timeperd>
+      <timeinfo>
+	<rngdates><begdate>1997-01-01</begdate>
+<enddate>1997-12-31</enddate></rngdates>
+    </timeinfo>
+      <current>Ground Condition</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update></update>
+    </status>
+    <spdom>
+      <bounding>
+	<westbc>-124.0000</westbc>
+	<eastbc>-114.0000</eastbc>
+	<northbc>42.0000</northbc>
+	<southbc>32.0000</southbc>
+      </bounding>
+      <lboundng>
+ <leftbc></leftbc><rightbc></rightbc><bottombc></bottombc><topbc></topbc></lboundng></spdom>
+    <keywords>
+	<theme><themekey>Pipelines</themekey><themekey>Water districts</themekey></theme>
+	<place><placekey>California</placekey></place>
+    </keywords>
+    <accconst>No Restrictions</accconst>
+    <useconst>No Redistribution</useconst>
+    <native></native>
+    <natvform></natvform></idinfo>
+    <ptcontac>
+      <cntinfo>
+	<cntorgp>
+	  <cntorg>California Environmental Resources Evaluation System (CERES)</cntorg>
+	  <cntper>Ray McDowell</cntper>
+	</cntorgp>
+	<cntaddr>
+	  <addrtype>mailing</addrtype>
+	  <address>California Environmental Resources Evaluation System (CERES)</address>
+	  <city></city>
+	  <state></state>
+	  <postal></postal>
+	</cntaddr>
+	<cntvoice>(916) 654-9990</cntvoice>
+	<cntemail>ray@ceres.ca.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+  <spdoinfo>
+    <direct></direct>
+    <ptvctinf>
+      <sdtsterm Name="arc">
+	<sdtstype></sdtstype>
+	<ptvctcnt></ptvctcnt>
+      </sdtsterm>
+      <sdtsterm Name="label">
+	<sdtstype></sdtstype>
+	<ptvctcnt></ptvctcnt>
+      </sdtsterm>
+      <sdtsterm Name="polygon">
+	<sdtstype></sdtstype>
+	<ptvctcnt></ptvctcnt>
+      </sdtsterm>
+      <sdtsterm Name="tic">
+	<sdtstype></sdtstype>
+	<ptvctcnt></ptvctcnt>
+      </sdtsterm>
+      <sdtsterm Name="annotation">
+	<sdtstype></sdtstype>
+	<ptvctcnt></ptvctcnt>
+      </sdtsterm>
+</ptvctinf>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <planar>
+	<planci>
+	  <plance></plance>
+	  <coordrep>
+	    <absres></absres>
+	    <ordres></ordres>
+	  </coordrep>
+	  <plandu></plandu>
+	</planci>
+	<mapproj><mapprojn></mapprojn><albers><stdparll></stdparll><longcm></longcm><feast></feast><fnorth></fnorth></albers></mapproj></planar>
+      <geodetic>
+	<horizdn></horizdn>
+	<ellips></ellips>
+	<semiaxis></semiaxis>
+	<denflat></denflat>
+      </geodetic>
+      <cordsysn><geogcsn></geogcsn><projcsn></projcsn></cordsysn></horizsys>
+  </spref>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+	<cntorgp>
+	  <cntorg>California Environmental Resources Evaluation System (CERES)</cntorg>
+	  <cntper>Ray McDowell</cntper>
+	</cntorgp>
+	<cntaddr>
+	  <addrtype>mailing</addrtype>
+	  <address>California Environmental Resources Evaluation System (CERES)</address>
+	  <city></city>
+	  <state></state>
+	  <postal></postal>
+	</cntaddr>
+	<cntvoice>(916) 654-9990</cntvoice>
+	<cntemail>ray@ceres.ca.gov</cntemail>
+      </cntinfo>
+    </distrib>
+    <stdorder>
+      <digform>
+	<digtinfo>
+	  <formname>Unknown/NA</formname>
+	  <filedec></filedec>
+	  <transize>12.385</transize>
+	  <dssize></dssize></digtinfo>
+	<digtopt>
+	  <onlinopt>
+	    <computer>
+	      <networka>
+		<networkr>http://gis.ca.gov/download.epl?catalog=casil&amp;data_title=Air Districts&amp;name=RWQCBNDA</networkr>
+	      </networka>
+	    </computer>
+	    <accinstr></accinstr>
+	  </onlinopt>
+	</digtopt>
+      </digform>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd>1997-12-23</metd>
+    <metc>
+      <cntinfo>
+	<cntorgp>
+	  <cntorg>California Environmental Resources Evaluation System (CERES)</cntorg>
+	  <cntper>Ray McDowell</cntper>
+	</cntorgp>
+	<cntaddr>
+	  <addrtype>mailing</addrtype>
+	  <address>California Environmental Resources Evaluation System (CERES)</address>
+	  <city></city>
+	  <state></state>
+	  <postal></postal>
+	</cntaddr>
+	<cntvoice>(916) 654-9990</cntvoice>
+	<cntemail>ray@ceres.ca.gov</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn></metstdn>
+    <metstdv></metstdv>
+    <mettc></mettc>
+    <metextns>
+      <onlink></onlink>
+      <metprof></metprof>
+    </metextns>
+    <langmeta></langmeta></metainfo>
+</metadata>
+
+
+
+
+
+
+
+
+

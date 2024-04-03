@@ -1,0 +1,301 @@
+"BiostimVar","BSPretty","Stratum","BIgoal","Prob","Prob2","LowestThreshold","LowestValidatedThreshold"
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Arid","BCG3","p50","50% rel prob",5.63063063063063,5.63063063063063
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Arid","BCG3","p80","80% rel prob",1.95195195195195,1.95195195195195
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Arid","BCG3","p90","90% rel prob",0.975975975975976,0.975975975975976
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Arid","BCG3","p95","95% rel prob",0.45045045045045,0.525525525525526
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Arid","BCG4","p50","50% rel prob",15.0900900900901,15.0900900900901
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Arid","BCG4","p80","80% rel prob",6.75675675675676,6.75675675675676
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Arid","BCG4","p90","90% rel prob",3.67867867867868,3.67867867867868
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Arid","BCG4","p95","95% rel prob",1.95195195195195,1.95195195195195
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Arid","Ref01","p50","50% rel prob",9.90990990990991,9.90990990990991
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Arid","Ref01","p80","80% rel prob",4.2042042042042,4.2042042042042
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Arid","Ref01","p90","90% rel prob",2.17717717717718,2.17717717717718
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Arid","Ref01","p95","95% rel prob",1.12612612612613,1.12612612612613
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Arid","Ref10","p50","50% rel prob",7.13213213213213,7.13213213213213
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Arid","Ref10","p80","80% rel prob",2.7027027027027,2.7027027027027
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Arid","Ref10","p90","90% rel prob",1.35135135135135,1.35135135135135
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Arid","Ref10","p95","95% rel prob",0.675675675675676,0.675675675675676
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Arid","Ref30","p50","50% rel prob",5.55555555555556,5.55555555555556
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Arid","Ref30","p80","80% rel prob",1.95195195195195,1.95195195195195
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Arid","Ref30","p90","90% rel prob",0.900900900900901,0.900900900900901
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Arid","Ref30","p95","95% rel prob",0.45045045045045,0.525525525525526
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","California","BCG3","p50","50% rel prob",4.87987987987988,4.87987987987988
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","California","BCG3","p80","80% rel prob",1.72672672672673,1.72672672672673
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","California","BCG3","p90","90% rel prob",0.825825825825826,0.825825825825826
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","California","BCG3","p95","95% rel prob",0.375375375375375,0.375375375375375
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","California","BCG4","p50","50% rel prob",12.7627627627628,14.4894894894895
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","California","BCG4","p80","80% rel prob",6.38138138138138,6.38138138138138
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","California","BCG4","p90","90% rel prob",3.67867867867868,3.67867867867868
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","California","BCG4","p95","95% rel prob",2.02702702702703,2.02702702702703
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","California","Ref01","p50","50% rel prob",9.00900900900901,9.00900900900901
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","California","Ref01","p80","80% rel prob",4.2042042042042,4.2042042042042
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","California","Ref01","p90","90% rel prob",2.32732732732733,2.32732732732733
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","California","Ref01","p95","95% rel prob",1.2012012012012,1.2012012012012
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","California","Ref10","p50","50% rel prob",6.08108108108108,6.08108108108108
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","California","Ref10","p80","80% rel prob",2.47747747747748,2.47747747747748
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","California","Ref10","p90","90% rel prob",1.27627627627628,1.27627627627628
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","California","Ref10","p95","95% rel prob",0.600600600600601,0.600600600600601
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","California","Ref30","p50","50% rel prob",4.65465465465465,4.65465465465465
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","California","Ref30","p80","80% rel prob",1.72672672672673,1.72672672672673
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","California","Ref30","p90","90% rel prob",0.825825825825826,0.825825825825826
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","California","Ref30","p95","95% rel prob",0.375375375375375,0.375375375375375
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Wet","BCG3","p50","50% rel prob",4.8048048048048,Inf
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Wet","BCG3","p80","80% rel prob",1.8018018018018,1.8018018018018
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Wet","BCG3","p90","90% rel prob",0.900900900900901,0.900900900900901
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Wet","BCG3","p95","95% rel prob",0.45045045045045,0.825825825825826
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Wet","BCG4","p50","50% rel prob",7.28228228228228,Inf
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Wet","BCG4","p80","80% rel prob",4.5045045045045,Inf
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Wet","BCG4","p90","90% rel prob",3.003003003003,Inf
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Wet","BCG4","p95","95% rel prob",1.95195195195195,Inf
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Wet","Ref01","p50","50% rel prob",7.28228228228228,Inf
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Wet","Ref01","p80","80% rel prob",4.5045045045045,Inf
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Wet","Ref01","p90","90% rel prob",3.003003003003,Inf
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Wet","Ref01","p95","95% rel prob",1.87687687687688,Inf
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Wet","Ref10","p50","50% rel prob",5.63063063063063,5.63063063063063
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Wet","Ref10","p80","80% rel prob",2.7027027027027,2.7027027027027
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Wet","Ref10","p90","90% rel prob",1.5015015015015,1.5015015015015
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Wet","Ref10","p95","95% rel prob",0.750750750750751,0.750750750750751
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Wet","Ref30","p50","50% rel prob",3.3033033033033,3.3033033033033
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Wet","Ref30","p80","80% rel prob",1.42642642642643,1.42642642642643
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Wet","Ref30","p90","90% rel prob",0.750750750750751,0.750750750750751
+"Ash_Free_Dry_Mass_mgPercm2","AFDM","Wet","Ref30","p95","95% rel prob",0.375375375375375,Inf
+"Chlorophyll_a_mgPerm2","Chl-a","Arid","BCG3","p50","50% rel prob",106.306306306306,106.306306306306
+"Chlorophyll_a_mgPerm2","Chl-a","Arid","BCG3","p80","80% rel prob",42.6426426426426,42.6426426426426
+"Chlorophyll_a_mgPerm2","Chl-a","Arid","BCG3","p90","90% rel prob",21.6216216216216,21.6216216216216
+"Chlorophyll_a_mgPerm2","Chl-a","Arid","BCG3","p95","95% rel prob",11.1111111111111,11.1111111111111
+"Chlorophyll_a_mgPerm2","Chl-a","Arid","BCG4","p50","50% rel prob",272.972972972973,272.972972972973
+"Chlorophyll_a_mgPerm2","Chl-a","Arid","BCG4","p80","80% rel prob",124.624624624625,124.624624624625
+"Chlorophyll_a_mgPerm2","Chl-a","Arid","BCG4","p90","90% rel prob",68.1681681681682,68.1681681681682
+"Chlorophyll_a_mgPerm2","Chl-a","Arid","BCG4","p95","95% rel prob",36.3363363363363,36.3363363363363
+"Chlorophyll_a_mgPerm2","Chl-a","Arid","Ref01","p50","50% rel prob",193.393393393393,193.393393393393
+"Chlorophyll_a_mgPerm2","Chl-a","Arid","Ref01","p80","80% rel prob",81.3813813813814,81.3813813813814
+"Chlorophyll_a_mgPerm2","Chl-a","Arid","Ref01","p90","90% rel prob",42.6426426426426,42.6426426426426
+"Chlorophyll_a_mgPerm2","Chl-a","Arid","Ref01","p95","95% rel prob",21.9219219219219,21.9219219219219
+"Chlorophyll_a_mgPerm2","Chl-a","Arid","Ref10","p50","50% rel prob",115.915915915916,115.915915915916
+"Chlorophyll_a_mgPerm2","Chl-a","Arid","Ref10","p80","80% rel prob",47.7477477477477,47.7477477477477
+"Chlorophyll_a_mgPerm2","Chl-a","Arid","Ref10","p90","90% rel prob",24.6246246246246,24.6246246246246
+"Chlorophyll_a_mgPerm2","Chl-a","Arid","Ref10","p95","95% rel prob",12.3123123123123,12.3123123123123
+"Chlorophyll_a_mgPerm2","Chl-a","Arid","Ref30","p50","50% rel prob",69.6696696696697,69.6696696696697
+"Chlorophyll_a_mgPerm2","Chl-a","Arid","Ref30","p80","80% rel prob",26.4264264264264,26.4264264264264
+"Chlorophyll_a_mgPerm2","Chl-a","Arid","Ref30","p90","90% rel prob",13.2132132132132,13.2132132132132
+"Chlorophyll_a_mgPerm2","Chl-a","Arid","Ref30","p95","95% rel prob",6.60660660660661,13.5135135135135
+"Chlorophyll_a_mgPerm2","Chl-a","California","BCG3","p50","50% rel prob",100,100
+"Chlorophyll_a_mgPerm2","Chl-a","California","BCG3","p80","80% rel prob",42.9429429429429,42.9429429429429
+"Chlorophyll_a_mgPerm2","Chl-a","California","BCG3","p90","90% rel prob",22.8228228228228,22.8228228228228
+"Chlorophyll_a_mgPerm2","Chl-a","California","BCG3","p95","95% rel prob",11.7117117117117,11.7117117117117
+"Chlorophyll_a_mgPerm2","Chl-a","California","BCG4","p50","50% rel prob",232.432432432432,232.432432432432
+"Chlorophyll_a_mgPerm2","Chl-a","California","BCG4","p80","80% rel prob",115.315315315315,115.315315315315
+"Chlorophyll_a_mgPerm2","Chl-a","California","BCG4","p90","90% rel prob",66.3663663663664,66.3663663663664
+"Chlorophyll_a_mgPerm2","Chl-a","California","BCG4","p95","95% rel prob",36.6366366366366,36.6366366366366
+"Chlorophyll_a_mgPerm2","Chl-a","California","Ref01","p50","50% rel prob",168.468468468468,168.468468468468
+"Chlorophyll_a_mgPerm2","Chl-a","California","Ref01","p80","80% rel prob",77.7777777777778,77.7777777777778
+"Chlorophyll_a_mgPerm2","Chl-a","California","Ref01","p90","90% rel prob",42.6426426426426,42.6426426426426
+"Chlorophyll_a_mgPerm2","Chl-a","California","Ref01","p95","95% rel prob",22.5225225225225,22.5225225225225
+"Chlorophyll_a_mgPerm2","Chl-a","California","Ref10","p50","50% rel prob",109.309309309309,109.309309309309
+"Chlorophyll_a_mgPerm2","Chl-a","California","Ref10","p80","80% rel prob",44.1441441441441,44.1441441441441
+"Chlorophyll_a_mgPerm2","Chl-a","California","Ref10","p90","90% rel prob",22.5225225225225,22.5225225225225
+"Chlorophyll_a_mgPerm2","Chl-a","California","Ref10","p95","95% rel prob",11.4114114114114,11.4114114114114
+"Chlorophyll_a_mgPerm2","Chl-a","California","Ref30","p50","50% rel prob",66.3663663663664,66.3663663663664
+"Chlorophyll_a_mgPerm2","Chl-a","California","Ref30","p80","80% rel prob",26.4264264264264,26.4264264264264
+"Chlorophyll_a_mgPerm2","Chl-a","California","Ref30","p90","90% rel prob",13.5135135135135,13.5135135135135
+"Chlorophyll_a_mgPerm2","Chl-a","California","Ref30","p95","95% rel prob",6.60660660660661,6.60660660660661
+"Chlorophyll_a_mgPerm2","Chl-a","Wet","BCG3","p50","50% rel prob",103.903903903904,Inf
+"Chlorophyll_a_mgPerm2","Chl-a","Wet","BCG3","p80","80% rel prob",38.7387387387387,38.7387387387387
+"Chlorophyll_a_mgPerm2","Chl-a","Wet","BCG3","p90","90% rel prob",19.2192192192192,37.5375375375375
+"Chlorophyll_a_mgPerm2","Chl-a","Wet","BCG3","p95","95% rel prob",9.60960960960961,20.4204204204204
+"Chlorophyll_a_mgPerm2","Chl-a","Wet","BCG4","p50","50% rel prob",136.636636636637,Inf
+"Chlorophyll_a_mgPerm2","Chl-a","Wet","BCG4","p80","80% rel prob",82.5825825825826,Inf
+"Chlorophyll_a_mgPerm2","Chl-a","Wet","BCG4","p90","90% rel prob",54.954954954955,54.954954954955
+"Chlorophyll_a_mgPerm2","Chl-a","Wet","BCG4","p95","95% rel prob",34.5345345345345,63.0630630630631
+"Chlorophyll_a_mgPerm2","Chl-a","Wet","Ref01","p50","50% rel prob",127.027027027027,Inf
+"Chlorophyll_a_mgPerm2","Chl-a","Wet","Ref01","p80","80% rel prob",77.1771771771772,77.1771771771772
+"Chlorophyll_a_mgPerm2","Chl-a","Wet","Ref01","p90","90% rel prob",51.951951951952,51.951951951952
+"Chlorophyll_a_mgPerm2","Chl-a","Wet","Ref01","p95","95% rel prob",32.7327327327327,32.7327327327327
+"Chlorophyll_a_mgPerm2","Chl-a","Wet","Ref10","p50","50% rel prob",89.1891891891892,Inf
+"Chlorophyll_a_mgPerm2","Chl-a","Wet","Ref10","p80","80% rel prob",42.3423423423423,42.3423423423423
+"Chlorophyll_a_mgPerm2","Chl-a","Wet","Ref10","p90","90% rel prob",23.7237237237237,23.7237237237237
+"Chlorophyll_a_mgPerm2","Chl-a","Wet","Ref10","p95","95% rel prob",12.6126126126126,21.3213213213213
+"Chlorophyll_a_mgPerm2","Chl-a","Wet","Ref30","p50","50% rel prob",81.6816816816817,81.6816816816817
+"Chlorophyll_a_mgPerm2","Chl-a","Wet","Ref30","p80","80% rel prob",34.5345345345345,34.5345345345345
+"Chlorophyll_a_mgPerm2","Chl-a","Wet","Ref30","p90","90% rel prob",17.4174174174174,17.4174174174174
+"Chlorophyll_a_mgPerm2","Chl-a","Wet","Ref30","p95","95% rel prob",8.70870870870871,Inf
+"Nitrogen_Total_mgPerL","Total N","Arid","BCG3","p50","50% rel prob",0.294294294294294,0.294294294294294
+"Nitrogen_Total_mgPerL","Total N","Arid","BCG3","p80","80% rel prob",0.114114114114114,0.114114114114114
+"Nitrogen_Total_mgPerL","Total N","Arid","BCG3","p90","90% rel prob",0.057057057057057,0.0660660660660661
+"Nitrogen_Total_mgPerL","Total N","Arid","BCG3","p95","95% rel prob",0.027027027027027,0.276276276276276
+"Nitrogen_Total_mgPerL","Total N","Arid","BCG4","p50","50% rel prob",Inf,Inf
+"Nitrogen_Total_mgPerL","Total N","Arid","BCG4","p80","80% rel prob",1.65165165165165,1.65165165165165
+"Nitrogen_Total_mgPerL","Total N","Arid","BCG4","p90","90% rel prob",0.912912912912913,0.912912912912913
+"Nitrogen_Total_mgPerL","Total N","Arid","BCG4","p95","95% rel prob",0.486486486486486,0.486486486486486
+"Nitrogen_Total_mgPerL","Total N","Arid","Ref01","p50","50% rel prob",2.5975975975976,2.5975975975976
+"Nitrogen_Total_mgPerL","Total N","Arid","Ref01","p80","80% rel prob",1.10810810810811,1.10810810810811
+"Nitrogen_Total_mgPerL","Total N","Arid","Ref01","p90","90% rel prob",0.585585585585586,0.585585585585586
+"Nitrogen_Total_mgPerL","Total N","Arid","Ref01","p95","95% rel prob",0.303303303303303,0.303303303303303
+"Nitrogen_Total_mgPerL","Total N","Arid","Ref10","p50","50% rel prob",0.555555555555556,0.555555555555556
+"Nitrogen_Total_mgPerL","Total N","Arid","Ref10","p80","80% rel prob",0.237237237237237,0.237237237237237
+"Nitrogen_Total_mgPerL","Total N","Arid","Ref10","p90","90% rel prob",0.126126126126126,0.126126126126126
+"Nitrogen_Total_mgPerL","Total N","Arid","Ref10","p95","95% rel prob",0.0630630630630631,0.0630630630630631
+"Nitrogen_Total_mgPerL","Total N","Arid","Ref30","p50","50% rel prob",0.327327327327327,0.327327327327327
+"Nitrogen_Total_mgPerL","Total N","Arid","Ref30","p80","80% rel prob",0.132132132132132,0.132132132132132
+"Nitrogen_Total_mgPerL","Total N","Arid","Ref30","p90","90% rel prob",0.0660660660660661,0.0660660660660661
+"Nitrogen_Total_mgPerL","Total N","Arid","Ref30","p95","95% rel prob",0.033033033033033,0.192192192192192
+"Nitrogen_Total_mgPerL","Total N","California","BCG3","p50","50% rel prob",0.3003003003003,0.3003003003003
+"Nitrogen_Total_mgPerL","Total N","California","BCG3","p80","80% rel prob",0.114114114114114,0.114114114114114
+"Nitrogen_Total_mgPerL","Total N","California","BCG3","p90","90% rel prob",0.057057057057057,0.0690690690690691
+"Nitrogen_Total_mgPerL","Total N","California","BCG3","p95","95% rel prob",0.027027027027027,0.027027027027027
+"Nitrogen_Total_mgPerL","Total N","California","BCG4","p50","50% rel prob",Inf,Inf
+"Nitrogen_Total_mgPerL","Total N","California","BCG4","p80","80% rel prob",1.69369369369369,1.69369369369369
+"Nitrogen_Total_mgPerL","Total N","California","BCG4","p90","90% rel prob",0.990990990990991,0.990990990990991
+"Nitrogen_Total_mgPerL","Total N","California","BCG4","p95","95% rel prob",0.552552552552553,0.552552552552553
+"Nitrogen_Total_mgPerL","Total N","California","Ref01","p50","50% rel prob",2.34534534534535,2.34534534534535
+"Nitrogen_Total_mgPerL","Total N","California","Ref01","p80","80% rel prob",1.08108108108108,1.08108108108108
+"Nitrogen_Total_mgPerL","Total N","California","Ref01","p90","90% rel prob",0.594594594594595,0.594594594594595
+"Nitrogen_Total_mgPerL","Total N","California","Ref01","p95","95% rel prob",0.318318318318318,0.318318318318318
+"Nitrogen_Total_mgPerL","Total N","California","Ref10","p50","50% rel prob",0.537537537537538,0.537537537537538
+"Nitrogen_Total_mgPerL","Total N","California","Ref10","p80","80% rel prob",0.24024024024024,0.24024024024024
+"Nitrogen_Total_mgPerL","Total N","California","Ref10","p90","90% rel prob",0.129129129129129,0.129129129129129
+"Nitrogen_Total_mgPerL","Total N","California","Ref10","p95","95% rel prob",0.0690690690690691,0.0690690690690691
+"Nitrogen_Total_mgPerL","Total N","California","Ref30","p50","50% rel prob",0.333333333333333,0.333333333333333
+"Nitrogen_Total_mgPerL","Total N","California","Ref30","p80","80% rel prob",0.132132132132132,0.132132132132132
+"Nitrogen_Total_mgPerL","Total N","California","Ref30","p90","90% rel prob",0.0660660660660661,0.0660660660660661
+"Nitrogen_Total_mgPerL","Total N","California","Ref30","p95","95% rel prob",0.033033033033033,0.174174174174174
+"Nitrogen_Total_mgPerL","Total N","Wet","BCG3","p50","50% rel prob",0.354354354354354,Inf
+"Nitrogen_Total_mgPerL","Total N","Wet","BCG3","p80","80% rel prob",0.135135135135135,Inf
+"Nitrogen_Total_mgPerL","Total N","Wet","BCG3","p90","90% rel prob",0.0660660660660661,Inf
+"Nitrogen_Total_mgPerL","Total N","Wet","BCG3","p95","95% rel prob",0.033033033033033,Inf
+"Nitrogen_Total_mgPerL","Total N","Wet","BCG4","p50","50% rel prob",1.13213213213213,Inf
+"Nitrogen_Total_mgPerL","Total N","Wet","BCG4","p80","80% rel prob",0.681681681681682,Inf
+"Nitrogen_Total_mgPerL","Total N","Wet","BCG4","p90","90% rel prob",0.453453453453453,Inf
+"Nitrogen_Total_mgPerL","Total N","Wet","BCG4","p95","95% rel prob",0.285285285285285,Inf
+"Nitrogen_Total_mgPerL","Total N","Wet","Ref01","p50","50% rel prob",0.870870870870871,Inf
+"Nitrogen_Total_mgPerL","Total N","Wet","Ref01","p80","80% rel prob",0.495495495495495,Inf
+"Nitrogen_Total_mgPerL","Total N","Wet","Ref01","p90","90% rel prob",0.315315315315315,Inf
+"Nitrogen_Total_mgPerL","Total N","Wet","Ref01","p95","95% rel prob",0.189189189189189,Inf
+"Nitrogen_Total_mgPerL","Total N","Wet","Ref10","p50","50% rel prob",0.528528528528528,Inf
+"Nitrogen_Total_mgPerL","Total N","Wet","Ref10","p80","80% rel prob",0.249249249249249,Inf
+"Nitrogen_Total_mgPerL","Total N","Wet","Ref10","p90","90% rel prob",0.138138138138138,Inf
+"Nitrogen_Total_mgPerL","Total N","Wet","Ref10","p95","95% rel prob",0.0750750750750751,Inf
+"Nitrogen_Total_mgPerL","Total N","Wet","Ref30","p50","50% rel prob",0.423423423423423,0.525525525525526
+"Nitrogen_Total_mgPerL","Total N","Wet","Ref30","p80","80% rel prob",0.168168168168168,Inf
+"Nitrogen_Total_mgPerL","Total N","Wet","Ref30","p90","90% rel prob",0.0840840840840841,Inf
+"Nitrogen_Total_mgPerL","Total N","Wet","Ref30","p95","95% rel prob",0.042042042042042,Inf
+"PCT_MAP","% cover","Arid","BCG3","p50","50% rel prob",68.0680680680681,92.7927927927928
+"PCT_MAP","% cover","Arid","BCG3","p80","80% rel prob",23.7237237237237,25.4254254254254
+"PCT_MAP","% cover","Arid","BCG3","p90","90% rel prob",11.5115115115115,12.3123123123123
+"PCT_MAP","% cover","Arid","BCG3","p95","95% rel prob",5.60560560560561,6.00600600600601
+"PCT_MAP","% cover","Arid","BCG4","p50","50% rel prob",Inf,Inf
+"PCT_MAP","% cover","Arid","BCG4","p80","80% rel prob",58.958958958959,72.6726726726727
+"PCT_MAP","% cover","Arid","BCG4","p90","90% rel prob",31.8318318318318,31.8318318318318
+"PCT_MAP","% cover","Arid","BCG4","p95","95% rel prob",16.7167167167167,16.7167167167167
+"PCT_MAP","% cover","Arid","Ref01","p50","50% rel prob",80.4804804804805,Inf
+"PCT_MAP","% cover","Arid","Ref01","p80","80% rel prob",34.034034034034,34.034034034034
+"PCT_MAP","% cover","Arid","Ref01","p90","90% rel prob",17.9179179179179,17.9179179179179
+"PCT_MAP","% cover","Arid","Ref01","p95","95% rel prob",9.20920920920921,9.20920920920921
+"PCT_MAP","% cover","Arid","Ref10","p50","50% rel prob",66.8668668668669,80.5805805805806
+"PCT_MAP","% cover","Arid","Ref10","p80","80% rel prob",25.1251251251251,32.032032032032
+"PCT_MAP","% cover","Arid","Ref10","p90","90% rel prob",12.5125125125125,16.3163163163163
+"PCT_MAP","% cover","Arid","Ref10","p95","95% rel prob",6.20620620620621,8.30830830830831
+"PCT_MAP","% cover","Arid","Ref30","p50","50% rel prob",64.0640640640641,Inf
+"PCT_MAP","% cover","Arid","Ref30","p80","80% rel prob",22.4224224224224,23.6236236236236
+"PCT_MAP","% cover","Arid","Ref30","p90","90% rel prob",10.9109109109109,11.6116116116116
+"PCT_MAP","% cover","Arid","Ref30","p95","95% rel prob",5.3053053053053,5.80580580580581
+"PCT_MAP","% cover","California","BCG3","p50","50% rel prob",71.2712712712713,71.2712712712713
+"PCT_MAP","% cover","California","BCG3","p80","80% rel prob",25.5255255255255,25.5255255255255
+"PCT_MAP","% cover","California","BCG3","p90","90% rel prob",12.4124124124124,14.6146146146146
+"PCT_MAP","% cover","California","BCG3","p95","95% rel prob",6.10610610610611,6.10610610610611
+"PCT_MAP","% cover","California","BCG4","p50","50% rel prob",Inf,Inf
+"PCT_MAP","% cover","California","BCG4","p80","80% rel prob",52.4524524524525,56.956956956957
+"PCT_MAP","% cover","California","BCG4","p90","90% rel prob",30.3303303303303,30.3303303303303
+"PCT_MAP","% cover","California","BCG4","p95","95% rel prob",16.8168168168168,16.8168168168168
+"PCT_MAP","% cover","California","Ref01","p50","50% rel prob",80.0800800800801,Inf
+"PCT_MAP","% cover","California","Ref01","p80","80% rel prob",36.8368368368368,36.8368368368368
+"PCT_MAP","% cover","California","Ref01","p90","90% rel prob",20.3203203203203,20.3203203203203
+"PCT_MAP","% cover","California","Ref01","p95","95% rel prob",10.8108108108108,10.8108108108108
+"PCT_MAP","% cover","California","Ref10","p50","50% rel prob",67.7677677677678,67.7677677677678
+"PCT_MAP","% cover","California","Ref10","p80","80% rel prob",26.7267267267267,26.7267267267267
+"PCT_MAP","% cover","California","Ref10","p90","90% rel prob",13.6136136136136,13.6136136136136
+"PCT_MAP","% cover","California","Ref10","p95","95% rel prob",6.80680680680681,6.80680680680681
+"PCT_MAP","% cover","California","Ref30","p50","50% rel prob",55.0550550550551,55.0550550550551
+"PCT_MAP","% cover","California","Ref30","p80","80% rel prob",21.4214214214214,21.4214214214214
+"PCT_MAP","% cover","California","Ref30","p90","90% rel prob",10.8108108108108,10.8108108108108
+"PCT_MAP","% cover","California","Ref30","p95","95% rel prob",5.40540540540541,5.40540540540541
+"PCT_MAP","% cover","Wet","BCG3","p50","50% rel prob",90.0900900900901,Inf
+"PCT_MAP","% cover","Wet","BCG3","p80","80% rel prob",47.1471471471472,47.1471471471472
+"PCT_MAP","% cover","Wet","BCG3","p90","90% rel prob",28.1281281281281,28.1281281281281
+"PCT_MAP","% cover","Wet","BCG3","p95","95% rel prob",15.9159159159159,Inf
+"PCT_MAP","% cover","Wet","BCG4","p50","50% rel prob",Inf,Inf
+"PCT_MAP","% cover","Wet","BCG4","p80","80% rel prob",69.4694694694695,Inf
+"PCT_MAP","% cover","Wet","BCG4","p90","90% rel prob",50.2502502502503,Inf
+"PCT_MAP","% cover","Wet","BCG4","p95","95% rel prob",34.5345345345345,Inf
+"PCT_MAP","% cover","Wet","Ref01","p50","50% rel prob",Inf,Inf
+"PCT_MAP","% cover","Wet","Ref01","p80","80% rel prob",69.4694694694695,Inf
+"PCT_MAP","% cover","Wet","Ref01","p90","90% rel prob",50.2502502502503,Inf
+"PCT_MAP","% cover","Wet","Ref01","p95","95% rel prob",34.5345345345345,Inf
+"PCT_MAP","% cover","Wet","Ref10","p50","50% rel prob",Inf,Inf
+"PCT_MAP","% cover","Wet","Ref10","p80","80% rel prob",55.7557557557558,Inf
+"PCT_MAP","% cover","Wet","Ref10","p90","90% rel prob",34.1341341341341,Inf
+"PCT_MAP","% cover","Wet","Ref10","p95","95% rel prob",19.7197197197197,19.7197197197197
+"PCT_MAP","% cover","Wet","Ref30","p50","50% rel prob",73.8738738738739,Inf
+"PCT_MAP","% cover","Wet","Ref30","p80","80% rel prob",32.2322322322322,Inf
+"PCT_MAP","% cover","Wet","Ref30","p90","90% rel prob",17.2172172172172,17.2172172172172
+"PCT_MAP","% cover","Wet","Ref30","p95","95% rel prob",8.90890890890891,Inf
+"Phosphorus_as_P_mgPerL","Total P","Arid","BCG3","p50","50% rel prob",0.051051051051051,0.051051051051051
+"Phosphorus_as_P_mgPerL","Total P","Arid","BCG3","p80","80% rel prob",0.0195195195195195,0.0195195195195195
+"Phosphorus_as_P_mgPerL","Total P","Arid","BCG3","p90","90% rel prob",0.00900900900900901,0.0105105105105105
+"Phosphorus_as_P_mgPerL","Total P","Arid","BCG3","p95","95% rel prob",0.0045045045045045,0.0285285285285285
+"Phosphorus_as_P_mgPerL","Total P","Arid","BCG4","p50","50% rel prob",0.56006006006006,0.56006006006006
+"Phosphorus_as_P_mgPerL","Total P","Arid","BCG4","p80","80% rel prob",0.252252252252252,0.252252252252252
+"Phosphorus_as_P_mgPerL","Total P","Arid","BCG4","p90","90% rel prob",0.136636636636637,0.136636636636637
+"Phosphorus_as_P_mgPerL","Total P","Arid","BCG4","p95","95% rel prob",0.0720720720720721,0.0720720720720721
+"Phosphorus_as_P_mgPerL","Total P","Arid","Ref01","p50","50% rel prob",0.34984984984985,0.34984984984985
+"Phosphorus_as_P_mgPerL","Total P","Arid","Ref01","p80","80% rel prob",0.147147147147147,0.147147147147147
+"Phosphorus_as_P_mgPerL","Total P","Arid","Ref01","p90","90% rel prob",0.0765765765765766,0.0765765765765766
+"Phosphorus_as_P_mgPerL","Total P","Arid","Ref01","p95","95% rel prob",0.039039039039039,0.039039039039039
+"Phosphorus_as_P_mgPerL","Total P","Arid","Ref10","p50","50% rel prob",0.138138138138138,0.138138138138138
+"Phosphorus_as_P_mgPerL","Total P","Arid","Ref10","p80","80% rel prob",0.0540540540540541,0.0540540540540541
+"Phosphorus_as_P_mgPerL","Total P","Arid","Ref10","p90","90% rel prob",0.027027027027027,0.027027027027027
+"Phosphorus_as_P_mgPerL","Total P","Arid","Ref10","p95","95% rel prob",0.0135135135135135,0.0135135135135135
+"Phosphorus_as_P_mgPerL","Total P","Arid","Ref30","p50","50% rel prob",0.0540540540540541,0.0540540540540541
+"Phosphorus_as_P_mgPerL","Total P","Arid","Ref30","p80","80% rel prob",0.0195195195195195,0.0195195195195195
+"Phosphorus_as_P_mgPerL","Total P","Arid","Ref30","p90","90% rel prob",0.00900900900900901,0.015015015015015
+"Phosphorus_as_P_mgPerL","Total P","Arid","Ref30","p95","95% rel prob",0.0045045045045045,Inf
+"Phosphorus_as_P_mgPerL","Total P","California","BCG3","p50","50% rel prob",0.051051051051051,0.051051051051051
+"Phosphorus_as_P_mgPerL","Total P","California","BCG3","p80","80% rel prob",0.0195195195195195,0.0195195195195195
+"Phosphorus_as_P_mgPerL","Total P","California","BCG3","p90","90% rel prob",0.00900900900900901,0.00900900900900901
+"Phosphorus_as_P_mgPerL","Total P","California","BCG3","p95","95% rel prob",0.0045045045045045,0.00600600600600601
+"Phosphorus_as_P_mgPerL","Total P","California","BCG4","p50","50% rel prob",0.506006006006006,0.506006006006006
+"Phosphorus_as_P_mgPerL","Total P","California","BCG4","p80","80% rel prob",0.250750750750751,0.250750750750751
+"Phosphorus_as_P_mgPerL","Total P","California","BCG4","p90","90% rel prob",0.144144144144144,0.144144144144144
+"Phosphorus_as_P_mgPerL","Total P","California","BCG4","p95","95% rel prob",0.0795795795795796,0.0795795795795796
+"Phosphorus_as_P_mgPerL","Total P","California","Ref01","p50","50% rel prob",0.307807807807808,0.307807807807808
+"Phosphorus_as_P_mgPerL","Total P","California","Ref01","p80","80% rel prob",0.141141141141141,0.141141141141141
+"Phosphorus_as_P_mgPerL","Total P","California","Ref01","p90","90% rel prob",0.0765765765765766,0.0765765765765766
+"Phosphorus_as_P_mgPerL","Total P","California","Ref01","p95","95% rel prob",0.0405405405405405,0.0405405405405405
+"Phosphorus_as_P_mgPerL","Total P","California","Ref10","p50","50% rel prob",0.127627627627628,0.127627627627628
+"Phosphorus_as_P_mgPerL","Total P","California","Ref10","p80","80% rel prob",0.0540540540540541,0.0540540540540541
+"Phosphorus_as_P_mgPerL","Total P","California","Ref10","p90","90% rel prob",0.027027027027027,0.027027027027027
+"Phosphorus_as_P_mgPerL","Total P","California","Ref10","p95","95% rel prob",0.0135135135135135,0.0135135135135135
+"Phosphorus_as_P_mgPerL","Total P","California","Ref30","p50","50% rel prob",0.0555555555555556,0.0555555555555556
+"Phosphorus_as_P_mgPerL","Total P","California","Ref30","p80","80% rel prob",0.021021021021021,0.021021021021021
+"Phosphorus_as_P_mgPerL","Total P","California","Ref30","p90","90% rel prob",0.0105105105105105,0.0105105105105105
+"Phosphorus_as_P_mgPerL","Total P","California","Ref30","p95","95% rel prob",0.0045045045045045,0.00750750750750751
+"Phosphorus_as_P_mgPerL","Total P","Wet","BCG3","p50","50% rel prob",0.0540540540540541,Inf
+"Phosphorus_as_P_mgPerL","Total P","Wet","BCG3","p80","80% rel prob",0.021021021021021,Inf
+"Phosphorus_as_P_mgPerL","Total P","Wet","BCG3","p90","90% rel prob",0.0105105105105105,0.0135135135135135
+"Phosphorus_as_P_mgPerL","Total P","Wet","BCG3","p95","95% rel prob",0.0045045045045045,Inf
+"Phosphorus_as_P_mgPerL","Total P","Wet","BCG4","p50","50% rel prob",0.310810810810811,Inf
+"Phosphorus_as_P_mgPerL","Total P","Wet","BCG4","p80","80% rel prob",0.211711711711712,Inf
+"Phosphorus_as_P_mgPerL","Total P","Wet","BCG4","p90","90% rel prob",0.13963963963964,Inf
+"Phosphorus_as_P_mgPerL","Total P","Wet","BCG4","p95","95% rel prob",0.0855855855855856,Inf
+"Phosphorus_as_P_mgPerL","Total P","Wet","Ref01","p50","50% rel prob",0.166666666666667,0.166666666666667
+"Phosphorus_as_P_mgPerL","Total P","Wet","Ref01","p80","80% rel prob",0.0975975975975976,Inf
+"Phosphorus_as_P_mgPerL","Total P","Wet","Ref01","p90","90% rel prob",0.0630630630630631,Inf
+"Phosphorus_as_P_mgPerL","Total P","Wet","Ref01","p95","95% rel prob",0.039039039039039,Inf
+"Phosphorus_as_P_mgPerL","Total P","Wet","Ref10","p50","50% rel prob",0.114114114114114,0.114114114114114
+"Phosphorus_as_P_mgPerL","Total P","Wet","Ref10","p80","80% rel prob",0.051051051051051,0.051051051051051
+"Phosphorus_as_P_mgPerL","Total P","Wet","Ref10","p90","90% rel prob",0.027027027027027,Inf
+"Phosphorus_as_P_mgPerL","Total P","Wet","Ref10","p95","95% rel prob",0.015015015015015,0.015015015015015
+"Phosphorus_as_P_mgPerL","Total P","Wet","Ref30","p50","50% rel prob",0.0675675675675676,0.0675675675675676
+"Phosphorus_as_P_mgPerL","Total P","Wet","Ref30","p80","80% rel prob",0.0255255255255255,0.0405405405405405
+"Phosphorus_as_P_mgPerL","Total P","Wet","Ref30","p90","90% rel prob",0.012012012012012,0.012012012012012
+"Phosphorus_as_P_mgPerL","Total P","Wet","Ref30","p95","95% rel prob",0.00600600600600601,0.0105105105105105

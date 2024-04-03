@@ -1,0 +1,9 @@
+200007031331   2    85     0sflatt export cover /callib/statewide/calw22a caw
+200010311535  24     1   215frenton copy /callib/statewide/CALW22A
+200011301140   0     1   622frenton copy /gisdata/hydro/calw22a
+200102131556   0     2    34frenton dissolve calw22a rwqcb_calw22 #all
+200102131557   0     0     3frenton labelerrors rwqcb_calw22
+200102131557   0     0     2frenton nodeerrors rwqcb_calw22
+20010214 810   0     2     0syse50 import cover rwqcb_calw22 newrwq
+20010214 815   0     1     0syse50 copy newrwq d:/statewide/newrwq
+20010214 823   0     0     1sflatt rename newrwq rwqcbnda
