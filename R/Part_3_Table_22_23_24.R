@@ -205,26 +205,6 @@ bi_thresholds_table$n_sites[bi_thresholds_table$Population == "Reference"] <- c(
 write.csv(bi_thresholds_table, "tables/Part_3_Table_22.csv", row.names = F)
 
 ## Table 23 ####
-# readxl::read_excel('data-raw/chemistry_ref_data_03202024.xlsx') |>
-#   rename(`TN (mg/L)` = Nitrogen_Total_mgPerL, `TP (mg/L)` = Phosphorus_as_P_mgPerL) |>
-#   mutate(
-#     Chl_a_ug_cm2 = Chlorophyll_a_mgPerm2 * 10,
-#     AFDM_mg_m2 = Ash_Free_Dry_Mass_mgPercm2 * 100
-#   ) |>
-#   filter(SiteStatus == "Reference", SelectedSample == "Selected") |>
-#   tidyr::pivot_longer(cols = c(`TN (mg/L)`, `TP (mg/L)`, Chl_a_ug_cm2, AFDM_mg_m2, PCT_MAP)) |>
-#   group_by(SiteStatus, name) |>
-#   summarize(
-#     n = sum(!is.na(value)),
-#     qe01 = quantile(value, probs = c(0.01), na.rm = T),
-#     qe10 = quantile(value, probs = c(0.1), na.rm = T),
-#     qe30 = quantile(value, probs = c(0.3), na.rm = T),
-#     qe70 = quantile(value, probs = c(0.7), na.rm = T),
-#     qe90 = quantile(value, probs = c(0.9), na.rm = T),
-#     qe99 = quantile(value, probs = c(0.99), na.rm = T)
-#   ) |>
-#   write.csv("chemistry_ref_data_summary.csv", row.names = F)
-
 all_data_chem_phab <- readr::read_csv("data-raw/Part_3_all_data_chem_phab.csv")
 mydf_bs <- mydf |>
   select(masterid, Type, Type2) |>
@@ -252,8 +232,7 @@ mydf_bs <- mydf |>
   mutate(
     name = factor(name, levels = c("TN", "TP", "Chl-a_ug_cm2", "AFDM_mg_m2", "PCT_MAP"))
   ) |>
-  arrange(name, desc(Type2)) #|>
- # write.csv("biostim_ind_quantiles.csv", row.names = F)
+  arrange(name, desc(Type2))
 
 table_23 <- mydf_bs |>
   transmute(
@@ -270,19 +249,16 @@ table_23 <- mydf_bs |>
     Indicator = factor(Indicator, levels = c("TN (mg/L)", "TP (mg/L)", "Chl-a (ug/cm2)", "AFDM (mg/m2)", "% cover")),
     n = n_sites,
     High = case_when(
-      #Type2 == "Reference" & Type %in% c("RFI-N", "RFI-S") ~ qe70,
       Type2 == "Reference" ~ qe70,
       Type2 == "Best observed" ~ qe01,
       .default = -999
     ),
     Intermediate = case_when(
-      #Type2 == "Reference" & Type %in% c("RFI-N","RFI-S") ~ qe90,
       Type2 == "Reference" ~ qe90,
       Type2 == "Best observed" ~ qe10,
       .default = -999
     ),
     Low = case_when(
-      #Type2 == "Reference" & Type %in% c("RFI-N", "RFI-S") ~ qe99,
       Type2 == "Reference" ~ qe99,
       Type2 == "Best observed" ~ qe30,
       .default = -999

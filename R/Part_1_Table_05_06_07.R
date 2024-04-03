@@ -120,7 +120,7 @@ table_7 <- cv_ref_scores |>
   mutate(Type = "CV_Ref") |>
   tidyr::pivot_longer(cols = c(CSCI, ASCI_D, ASCI_H), names_to = "Index", values_to = "SD_amongRef") |>
   bind_rows(
-    tibble::tibble(
+    tibble(
       Type = c("Ref"),
       Index = c("CSCI", "ASCI_D","ASCI_H"),
       SD_amongRef = c(0.16, 0.11, 0.11)

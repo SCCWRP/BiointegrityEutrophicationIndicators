@@ -8,7 +8,7 @@ bi_varz <- c("CSCI", "ASCI_D", "ASCI_H") |> sort()
 bs_varz <- c("TN_mgL", "TP_mgL", "Chla_ugcm2", "AFDM_gm2", "PCT_MAP", "SpCond_uScm", "Temp_C", "DO_mgL", "PCT_SAFN")
 bs_pretty <- c("TN", "TP", "Chla", "AFDM", "PCT_MAP", "SpCond", "Temp", "DO", "PCT_SAFN")
 
-thresholds_df <- tibble::tibble(
+thresholds_df <- tibble(
   Index = c("CSCI", "ASCI_D", "ASCI_H"),
   Ref10 = c(0.79, 0.86, 0.86)
 )
@@ -58,7 +58,7 @@ high_score_table <- chan_bi_df |>
   mutate(PctPass = 100 * (n_pass / n)) |>
   filter(!(Class %in% c("Natural", "Agricultural"))) |>
   bind_rows(
-    tibble::tibble(
+    tibble(
       Classification = factor(c("Watershed")), 
       Class = "Ambiguous",
       Index = c("ASCI_D", "ASCI_H"),

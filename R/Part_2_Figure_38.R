@@ -10,7 +10,7 @@ site_info_varz <- c("masterid", "latitude", "longitude", "comid", "huc", "county
 class_varz <- c("ISWP2_name", "Watershed", "class_do")
 bi_varz <- c("CSCI", "ASCI_D", "ASCI_H") |> sort()
 
-thresholds_df <- tibble::tibble(
+thresholds_df <- tibble(
   Index = c("CSCI", "ASCI_D", "ASCI_H"),
   Ref10 = c(0.79, 0.86, 0.86)
 )

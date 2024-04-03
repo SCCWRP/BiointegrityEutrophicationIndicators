@@ -23,7 +23,7 @@ plot_dat_pivot <- plot_dat |>
     names_to = "Index", values_to = "IndexScore", values_drop_na = T
   )
 
-plot_dat_pivot_thresholds <- tibble::tibble(
+plot_dat_pivot_thresholds <- tibble(
     Index = c("CSCI", "ASCI_D", "ASCI_H"),
     q50 = 1,
     q10 = c(.79, .84, .84)

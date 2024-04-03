@@ -28,7 +28,7 @@ eval_sf_over <- eval_sf_sa |>
   sf::st_join(huc10_sf |> select(HUC10) |> sf::st_transform(crs = sf::st_crs(eval_sf_sa)))
 
 huc10_summary <- eval_sf_over |>
-  tibble::as_tibble() |>
+  as_tibble() |>
   select(-geometry) |>
   group_by(HUC10) |>
   summarize(

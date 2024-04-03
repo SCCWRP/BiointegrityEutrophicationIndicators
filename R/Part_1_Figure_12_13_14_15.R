@@ -133,7 +133,7 @@ rf_asci_h <- randomForest::randomForest(
   importance = T
 )
 
-rf_importance_df <- tibble::tibble(
+rf_importance_df <- tibble(
     EnvVar = row.names(rf_csci$importance),
     CSCI = rf_csci$importance[, 1],
     ASCI_D = rf_asci_d$importance[, 1],

@@ -3,7 +3,7 @@ library(ggplot2)
 
 set.seed(42)
 
-mydf <- tibble::tibble(value = rnorm(1000, mean = 1, sd = 0.1)) |>
+mydf <- tibble(value = rnorm(1000, mean = 1, sd = 0.1)) |>
   mutate(value = if_else(value < 0, 0, value))
 
 myquants <- mydf |>

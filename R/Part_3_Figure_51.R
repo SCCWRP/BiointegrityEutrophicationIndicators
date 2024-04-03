@@ -13,7 +13,7 @@ thresholds.df <- data.frame(
 thresholds.df2 <- thresholds.df |>
   tidyr::pivot_longer(cols = starts_with("BCG"))
 
-mydf<-readr::read_csv("data-raw/Part_3_thresholds_df_formatted.csv") |>
+mydf <- readr::read_csv("data-raw/Part_3_thresholds_df_formatted.csv") |>
   rename(Thresh_Hi = High, Thresh_Int = Medium, Thresh_Low = Low) |>
   filter(
     Population %in% c(
