@@ -1,7 +1,7 @@
 "Threshold type","Population","Index","StandardUsageSupported","n_sites","High","Intermediate","Low"
-"Reference","Reference","ASCI_D","Yes",418,0.95,0.86,0.75
-"Reference","Reference","ASCI_H","Yes",418,0.95,0.86,0.75
-"Reference","Reference","CSCI","Yes",473,0.92,0.79,0.63
+"Reference","Wadeable (standard)","ASCI_D","Yes",418,0.95,0.86,0.75
+"Reference","Wadeable (standard)","ASCI_H","Yes",418,0.95,0.86,0.75
+"Reference","Wadeable (standard)","CSCI","Yes",473,0.92,0.79,0.63
 "Reference","RFI-N","ASCI_D","Yes",32,0.972539095552065,0.892346746981666,0.781688947006206
 "Reference","RFI-N","ASCI_H","Yes",32,0.942184283777687,0.869296732485941,0.76871885672436
 "Reference","RFI-N","CSCI","No",79,0.69842114222789,0.564620438649583,0.37998821678435

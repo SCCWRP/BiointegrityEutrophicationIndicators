@@ -155,7 +155,7 @@ bi_thresholds_table <- mydf |>
   arrange(Type)  |>
   transmute(
     `Threshold type` = Type2,
-    Population = Type, 
+    Population = if_else(Type == 'Reference', 'Wadeable (standard)', Type), 
     Index = Index, 
     StandardUsageSupported = case_when(
       Type == "Reference" ~ "Yes",
@@ -200,7 +200,7 @@ bi_thresholds_table <- mydf |>
   )
 
 #Numbers from Theroux et al. 2022 or Mazor et al. 2016
-bi_thresholds_table$n_sites[bi_thresholds_table$Population == "Reference"] <- c(418, 418, 473) 
+bi_thresholds_table$n_sites[bi_thresholds_table$Population == 'Wadeable (standard)'] <- c(418, 418, 473) 
 
 write.csv(bi_thresholds_table, "tables/Part_3_Table_22.csv", row.names = F)
 
@@ -363,7 +363,7 @@ my.models.predictions <- model.summary |>
   tidyr::unnest(cols = c(data, Fit, SE))
 
 table_24 <- bi_thresholds_table |>
-  filter(!(Population %in% c("SB0_CVF", "HB_CVF", "CC_CVF"))) |>
+  filter(!(Population %in% c("SB0_CVF", "HB_CVF", "CC_CVF", "RFI-N", "RFI-S"))) |>
   select(Index, Population, StandardUsageSupported, High, Intermediate, Low) |>
   tidyr::pivot_longer(cols = c(High, Intermediate, Low)) |>
   unique() |>
@@ -381,7 +381,7 @@ table_24 <- bi_thresholds_table |>
   mutate(
     Population = factor(
       Population,
-      levels = c("Wadeable streams", "Reference", "CVF", "SB0", "SB1", "SB2", "HB", "CC"),
+      levels = c("Wadeable streams", "Wadeable (standard)", "CVF", "SB0", "SB1", "SB2", "HB", "CC"),
       labels = c(
         "Wadeable streams (logistic regression, Mazor et al. 2022)", 
         "Wadeable streams (SCAM, present study)", "CVF", "SB0", "SB1", "SB2", "HB", "CC"
