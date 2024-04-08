@@ -20,9 +20,9 @@ myquants <- mydf |>
     data.frame(
       group = c(
         "Reference biointegrity thresholds", 
-        "Reference biostimulatory thresholds", 
+        "Reference eutrophication thresholds", 
         "Best observed biointegrity thresholds",
-        "Best observed biostimulatory thresholds"
+        "Best observed eutrophication thresholds"
       )
     )
   ) |>
@@ -33,15 +33,15 @@ myquants <- mydf |>
       group == "Reference biointegrity thresholds" & quant == "q01" ~ "Low\nStringency",
       group == "Reference biointegrity thresholds" & quant == "q10" ~ "Intermediate\nStringency",
       group == "Reference biointegrity thresholds" & quant == "q30" ~ "High\nStringency",
-      group == "Reference biostimulatory thresholds" & quant == "q70" ~ "High\nStringency",
-      group == "Reference biostimulatory thresholds" & quant == "q90" ~ "Intermediate\nStringency",
-      group == "Reference biostimulatory thresholds" & quant == "q99" ~ "Low\nStringency",
+      group == "Reference eutrophication thresholds" & quant == "q70" ~ "High\nStringency",
+      group == "Reference eutrophication thresholds" & quant == "q90" ~ "Intermediate\nStringency",
+      group == "Reference eutrophication thresholds" & quant == "q99" ~ "Low\nStringency",
       group == "Best observed biointegrity thresholds" & quant == "q99" ~ "High\nStringency",
       group == "Best observed biointegrity thresholds" & quant == "q90" ~ "Intermediate\nStringency",
       group == "Best observed biointegrity thresholds" & quant == "q70" ~ "Low\nStringency",
-      group == "Best observed biostimulatory thresholds" & quant == "q30" ~ "Low\nStringency",
-      group == "Best observed biostimulatory thresholds" & quant == "q10" ~ "Intermediate\nStringency",
-      group == "Best observed biostimulatory thresholds" & quant == "q01" ~ "High\nStringency",
+      group == "Best observed eutrophication thresholds" & quant == "q30" ~ "Low\nStringency",
+      group == "Best observed eutrophication thresholds" & quant == "q10" ~ "Intermediate\nStringency",
+      group == "Best observed eutrophication thresholds" & quant == "q01" ~ "High\nStringency",
       .default = NA_character_
     ),
     y = case_when(
@@ -49,7 +49,7 @@ myquants <- mydf |>
       quant %in% c("q10", "q90") ~ 85,
       quant %in% c("q30", "q70") ~ 100
     ),
-    group = factor(group, levels = c("Reference biointegrity thresholds", "Reference biostimulatory thresholds", "Best observed biointegrity thresholds", "Best observed biostimulatory thresholds"))
+    group = factor(group, levels = c("Reference biointegrity thresholds", "Reference eutrophication thresholds", "Best observed biointegrity thresholds", "Best observed eutrophication thresholds"))
   ) |>
   filter(!is.na(label))
 
@@ -74,8 +74,8 @@ make_plot <- function(mydf, myquants, group_) {
 
 ref_best_distributions_1 <- make_plot(mydf, myquants, "Reference biointegrity thresholds")
 ref_best_distributions_2 <- make_plot(mydf, myquants, "Best observed biointegrity thresholds")
-ref_best_distributions_3 <- make_plot(mydf, myquants, "Reference biostimulatory thresholds")
-ref_best_distributions_4 <- make_plot(mydf, myquants, "Best observed biostimulatory thresholds")
+ref_best_distributions_3 <- make_plot(mydf, myquants, "Reference eutrophication thresholds")
+ref_best_distributions_4 <- make_plot(mydf, myquants, "Best observed eutrophication thresholds")
 
 combined_plots <- ggpubr::ggarrange(
   ref_best_distributions_1, ref_best_distributions_2, 
@@ -83,4 +83,4 @@ combined_plots <- ggpubr::ggarrange(
   nrow = 2, ncol = 2
 )
 
-ggsave(combined_plots, filename = "figures/Part_3_Figure_42.png", height = 6, width = 6.5, dpi = 300)
+ggsave(combined_plots, filename = "figures/Part_3_Figure_42.jpg", height = 6, width = 6.5, dpi = 300)

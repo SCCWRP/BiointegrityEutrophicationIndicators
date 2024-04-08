@@ -20,7 +20,7 @@ biostim_data <- readr::read_csv('data-raw/Part_1_biostim_gis_input_cleaned.csv')
     latitude = new_lat, 
     longitude = new_long, 
     RefStatus = case_when(RefStatus == "Reference" ~ "Reference", .default = "Non-reference"), 
-    type = "Biostimulatory"
+    type = "Eutrophication"
   ) |> 
   unique()
 
@@ -39,7 +39,8 @@ asci_data <- readr::read_csv("data-raw/Part_1_asci_caldata.csv")  |>
     latitude, 
     longitude,
     RefStatus = case_when(RefStatus == "Reference" ~ "Reference", .default = "Non-reference"),
-    type = "ASCI") |> 
+    type = "ASCI"
+  ) |> 
   unique()
 
 csci_data <- readr::read_csv("data-raw/Part_1_stations.out.csv") |>
@@ -61,7 +62,7 @@ cal_sf <- bind_rows(biostim_data, csci_data, asci_data, test_data) |>
   sf::st_join(studyarea_sf) |>
   mutate(
     InStudy = PSA6 %in% c("Central Valley", "Deserts Modoc"),
-    type = factor(type, levels = c("CSCI", "ASCI", "Biostimulatory", "Test"))
+    type = factor(type, levels = c("CSCI", "ASCI", "Eutrophication", "Test"))
   ) 
 
 data_sets_map <- ggplot() +

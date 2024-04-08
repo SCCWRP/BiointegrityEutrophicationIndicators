@@ -7,6 +7,7 @@ assessment_summary_plot <- function(thresh_df, stringency, applicable_classes, o
     filter(Stringency %in% stringency) |>
     inner_join(obs_df) |>
     mutate(
+      Indicator_Type = stringr::str_replace(Indicator_Type, "Biostimulatory", "Eutrophication"),
       Threshold_pass = case_when(
         is.na(Observed_value) ~ "No data",
         is.na(Threshold_value) ~ "No threshold identified",
@@ -14,10 +15,10 @@ assessment_summary_plot <- function(thresh_df, stringency, applicable_classes, o
         Indicator_Type == "Biointegrity" & Threshold_value <= Observed_value & is.na(Flag) ~ "Passes",
         Indicator_Type == "Biointegrity" & Threshold_value > Observed_value & !is.na(Flag) ~ "Fails but flagged",
         Indicator_Type == "Biointegrity" & Threshold_value <= Observed_value & !is.na(Flag) ~ "Passes flagged",
-        Indicator_Type == "Biostimulatory" & Threshold_value < Observed_value & is.na(Flag) ~ "Fails",
-        Indicator_Type == "Biostimulatory" & Threshold_value >= Observed_value & is.na(Flag) ~ "Passes",
-        Indicator_Type == "Biostimulatory" & Threshold_value < Observed_value & !is.na(Flag) ~ "Fails but flagged",
-        Indicator_Type == "Biostimulatory" & Threshold_value >= Observed_value & !is.na(Flag) ~ "Passes flagged",
+        Indicator_Type == "Eutrophication" & Threshold_value < Observed_value & is.na(Flag) ~ "Fails",
+        Indicator_Type == "Eutrophication" & Threshold_value >= Observed_value & is.na(Flag) ~ "Passes",
+        Indicator_Type == "Eutrophication" & Threshold_value < Observed_value & !is.na(Flag) ~ "Fails but flagged",
+        Indicator_Type == "Eutrophication" & Threshold_value >= Observed_value & !is.na(Flag) ~ "Passes flagged",
         .default = "Other"
       ),
       obs_label = paste0(Indicator, "\n(", Observed_value, ")"),

@@ -48,8 +48,8 @@ csci_dev_gis2 <- csci_dev_gis |>
   unique() |>
   mutate(
     studyarea = case_when(sitestatus == "Reference" ~ "Reference", .default = "Non-reference"), 
-    Type="CSCI cal", 
-    Type2="Cal"
+    Type = "CSCI cal", 
+    Type2 = "Cal"
   )
 
 
@@ -94,10 +94,10 @@ all_cal_test <- bind_rows(csci_caltest, asci_caltest, biostim_caltest) |>
     Type.x = case_when(
       Type == "CSCI cal" ~ "CSCI",
       Type == "ASCI cal" ~ "ASCI",
-      Type == "Biostim cal" ~ "Biostim",
+      Type == "Biostim cal" ~ "ERM",
       .default = Type
     ),
-    Type.x = factor(Type.x, levels = c("CSCI", "ASCI", "Biostim", "Test"))
+    Type.x = factor(Type.x, levels = c("CSCI", "ASCI", "ERM", "Test"))
   ) 
 
 ## Figure 3 ####
@@ -153,7 +153,7 @@ asci_cal_slope_fines <- all_data_slope_fines |>
 
 biostim_cal_slope_fines <- all_data_slope_fines |> 
   filter(masterid %in% biostim_dev_gis$masterid) |> 
-  mutate(Type.x = "Biostim") |>
+  mutate(Type.x = "ERM") |>
   inner_join(biostim_dev_gis2 |> select(masterid, studyarea))
 
 test_data_slope_fines <- all_data_slope_fines |> 
@@ -196,7 +196,7 @@ slope_fines_plot_data <- univariate_plot_data |>
       EnvVar == "XSLOPE" ~ "slope",
       .default = "Other"
     ),
-    Type.x = factor(Type.x, levels=c("CSCI", "ASCI", "Biostim", "Test"))
+    Type.x = factor(Type.x, levels = c("CSCI", "ASCI", "ERM", "Test"))
   )
 
 slope_fines_plot <- ggplot(
@@ -217,7 +217,7 @@ slope_fines_plot <- ggplot(
   guides(fill = guide_legend(override.aes = list(size = 2))) +
   theme(legend.position = "bottom")
 
-ggsave(slope_fines_plot, filename ="figures/Part_1_Figure_04.jpg", height = 4, width = 6, dpi = 300)
+ggsave(slope_fines_plot, filename = "figures/Part_1_Figure_04.jpg", height = 4, width = 6, dpi = 300)
 
 
 ## Figure 5 ####
