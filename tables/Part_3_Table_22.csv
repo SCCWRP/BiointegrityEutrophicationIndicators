@@ -1,6 +1,6 @@
 "Threshold type","Population","Index","StandardUsageSupported","n_sites","High","Intermediate","Low"
-"Reference","Wadeable (standard)","ASCI_D","Yes",418,0.95,0.86,0.75
-"Reference","Wadeable (standard)","ASCI_H","Yes",418,0.95,0.86,0.75
+"Reference","Wadeable (standard)","ASCI_D","Yes",418,0.94,0.86,0.75
+"Reference","Wadeable (standard)","ASCI_H","Yes",418,0.94,0.86,0.75
 "Reference","Wadeable (standard)","CSCI","Yes",473,0.92,0.79,0.63
 "Reference","RFI-N","ASCI_D","Yes",32,0.972539095552065,0.892346746981666,0.781688947006206
 "Reference","RFI-N","ASCI_H","Yes",32,0.942184283777687,0.869296732485941,0.76871885672436
@@ -29,5 +29,9 @@
 "Best observed","HB_CVF","ASCI_D","ND",8,1.05443074369498,1.02900752196577,0.959281602115027
 "Best observed","HB_CVF","ASCI_H","ND",8,0.949531480107458,0.927802068085167,0.800255930809769
 "Best observed","HB_CVF","CSCI","ND",10,0.5661258144,0.487547844,0.394388282
+"Best observed","CC","ASCI_D","ND",0,NA,NA,NA
+"Best observed","CC","ASCI_H","ND",0,NA,NA,NA
 "Best observed","CC","CSCI","No",65,0.532009338864902,0.446246353453962,0.3670014242807
+"Best observed","CC_CVF","ASCI_D","ND",0,NA,NA,NA
+"Best observed","CC_CVF","ASCI_H","ND",0,NA,NA,NA
 "Best observed","CC_CVF","CSCI","ND",65,0.532009338864902,0.446246353453962,0.3670014242807

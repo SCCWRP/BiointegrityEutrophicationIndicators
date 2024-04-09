@@ -182,7 +182,7 @@ bi_thresholds_table <- mydf |>
     High = case_when(
       Type2 == "Reference" & Type %in% c("RFI-N", "RFI-S") ~ qn30,
       Type2 == "Reference" & Type %in% c("Reference") & Index == "CSCI" ~ 0.92,
-      Type2 == "Reference" & Type %in% c("Reference") & Index %in% c("ASCI_D", "ASCI_H") ~ 0.95,
+      Type2 == "Reference" & Type %in% c("Reference") & Index %in% c("ASCI_D", "ASCI_H") ~ 0.94,
       Type2 == "Best observed" ~ qe99,
       .default = -999
     ),
@@ -404,6 +404,7 @@ table_24 <- bi_thresholds_table |>
     `% cover` = if_else(`% cover` == max_cov, NA_real_, `% cover`)
   ) |>
   arrange(Population, Index) |>
+  filter(!is.na(value)) |>
   select(
     `Stream class` = Population, Index, StandardUsageSupported, `Biointegrity goal` = value, 
     `Total N`, `Total P`, `Chl-a`, AFDM, `% cover`
