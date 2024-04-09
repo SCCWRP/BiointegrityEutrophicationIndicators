@@ -7,7 +7,7 @@ library(dplyr)
 csci_df <- CSCI::refsamples
 asci_df <- readr::read_csv("data-raw/Part_1_asci_caldata.csv") |>
   rename_with(.fn = tolower) |>
-  select(-...1)
+  select(-...1) 
 
 
 ## Intermittent reference
@@ -46,6 +46,7 @@ mydf <-
   #ASCI
   full_join(
     asci_df |>
+      filter(sitesetsample2 == 'Reference') |>
       transmute(masterid = stationcode, ASCI_D = d_asci, ASCI_H = h_asci, Type = "Reference")
   ) |>
   #Intermittent
@@ -133,6 +134,8 @@ bi_thresholds_table <- mydf |>
   group_by(masterid, Type2, Type, Index) |>
   summarize(value = mean(Score, na.rm = T)) |>
   ungroup() |>
+  tidyr::pivot_wider(names_from = "Index", values_from = "value") |>
+  tidyr::pivot_longer(cols = ASCI_D:CSCI, names_to = "Index", values_to = "value") |>
   group_by(Type2, Type, Index) |>
   summarize(
     n_sites = sum(!is.na(value)),
@@ -142,7 +145,7 @@ bi_thresholds_table <- mydf |>
     qe70 = quantile(value, probs = c(0.7), na.rm = T),
     qe90 = quantile(value, probs = c(0.9), na.rm = T),
     qe99 = quantile(value, probs = c(0.99), na.rm = T),
-    MeanScore = mean(value),
+    MeanScore = mean(value, na.rm = T),
     SDScore = sd(value, na.rm = T),
     qn01 = qnorm(p = 0.01, mean = MeanScore, sd = SDScore, lower.tail = T),
     qn10 = qnorm(p = 0.10, mean = MeanScore, sd = SDScore, lower.tail = T),
@@ -211,8 +214,7 @@ mydf_bs <- mydf |>
   unique() |>
   left_join(
     all_data_chem_phab |>
-      select(masterid, sampledate, TN, TP, AFDM_mg_m2, `Chl-a_ug_cm2`, PCT_MAP),
-    relationship = "many-to-many"
+      select(masterid, sampledate, TN, TP, AFDM_mg_m2, `Chl-a_ug_cm2`, PCT_MAP)
   ) |>
   tidyr::pivot_longer(cols = c(TN, TP, AFDM_mg_m2, `Chl-a_ug_cm2`, PCT_MAP), values_drop_na = T) |>
   group_by(masterid, Type, Type2, name) |>
@@ -264,6 +266,7 @@ table_23 <- mydf_bs |>
       .default = -999
     )
   ) |>
+  filter(!(Population %in% c("SB0_CVF", "HB_CVF", "CC_CVF"))) |>
   select(Indicator, `Threshold type`, `Stream class` = Population, n, High, Intermediate, Low) |>
   arrange(Indicator, desc(`Threshold type`)) 
 
@@ -325,12 +328,19 @@ mod.dat <- bind_rows(mod.dat.csci, mod.dat.asci_d, mod.dat.asci_h)
 
 #CREATE MODELS
 length.out.x <- 1000
+
+max_TN <- 3
+max_TP <- 1.5
+max_chl <- 300
+max_afdm <- 40
+max_cov <- 100
+
 my.newdfs <- data.frame(
-    Nitrogen_Total_mgPerL = seq(from = 0, to = 3, length.out = length.out.x),
-    Phosphorus_as_P_mgPerL = seq(from = 0, to = 1.5, length.out = length.out.x),
-    Chlorophyll_a_mgPerm2 = seq(from = 0, to = 300, length.out = length.out.x),
-    Ash_Free_Dry_Mass_mgPercm2 = seq(from = 0, to = 40, length.out = length.out.x),
-    PCT_MAP = seq(from = 0, to = 100, length.out = length.out.x)
+    Nitrogen_Total_mgPerL = seq(from = 0, to = max_TN, length.out = length.out.x),
+    Phosphorus_as_P_mgPerL = seq(from = 0, to = max_TP, length.out = length.out.x),
+    Chlorophyll_a_mgPerm2 = seq(from = 0, to = max_chl, length.out = length.out.x),
+    Ash_Free_Dry_Mass_mgPercm2 = seq(from = 0, to = max_afdm, length.out = length.out.x),
+    PCT_MAP = seq(from = 0, to = max_cov, length.out = length.out.x)
   ) |>
   tidyr::pivot_longer(cols = everything(), names_to = "BiostimVar", values_to = "Biostim") |>
   tidyr::nest(.by = "BiostimVar")
@@ -386,7 +396,12 @@ table_24 <- bi_thresholds_table |>
         "Wadeable streams (logistic regression, Mazor et al. 2022)", 
         "Wadeable streams (SCAM, present study)", "CVF", "SB0", "SB1", "SB2", "HB", "CC"
       )
-    )
+    ),
+    `Total N` = if_else(`Total N` == max_TN, NA_real_, `Total N`),
+    `Total P` = if_else(`Total P` == max_TP, NA_real_, `Total P`),
+    `Chl-a` = if_else(`Chl-a` == max_chl, NA_real_, `Chl-a`),
+    AFDM = if_else(AFDM == max_afdm, NA_real_, AFDM),
+    `% cover` = if_else(`% cover` == max_cov, NA_real_, `% cover`)
   ) |>
   arrange(Population, Index) |>
   select(
