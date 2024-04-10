@@ -283,8 +283,8 @@ mazor2022_thresholds <- readr::read_csv("data-raw/Part_3_model.summary_threshold
     BSPretty,
     Stringency = case_when(
       BIgoal == "Ref30" ~ "High",
-      BIgoal=="Ref10"~"Intermediate",
-      BIgoal=="Ref01"~"Low",
+      BIgoal == "Ref10" ~ "Intermediate",
+      BIgoal == "Ref01" ~ "Low",
       .default = "x"
     ),
     Threshold = p80
