@@ -49,21 +49,17 @@ huc10_sf2 <- huc10_sf |>
   sf::st_intersection(psa_sf |> sf::st_transform(crs = sf::st_crs(huc10_sf))) 
 
 huc10_map <- ggplot() +
-  geom_sf(
-    data = huc10_sf2 , 
-    aes(fill=PctP), 
-    color = NA
-  ) +
-  scale_fill_viridis_c(option = "plasma", direction = -1, name = "% perennial") +
-  geom_sf(data = psa_sf, fill = NA, color = "black", size = 1) +
+  geom_sf(data = huc10_sf2, aes(fill = PctP), color = NA) +
+  scale_fill_viridis_c(option = "plasma", direction = -1, name = "% perennial", begin = 0, end = 0.8) +
+  geom_sf(data = psa_sf, fill = NA, color = "black", linewidth = 1) +
   theme_bw()+
   theme(axis.text = element_blank())
 
 flow_status_map2 <- ggplot() +
-  geom_sf(data = psa_sf) +
+  geom_sf(data = psa_sf, fill = "gray60") +
   geom_sf(data = eval_sf_sa |> filter(FlowStatus != "Unknown"), aes(color = FlowStatus), size = 0.5) +
-  scale_color_viridis_d(option = "plasma", direction = -1, name = "Flow Status", begin = 0.1, end = 0.9) +
-  geom_sf(data = psa_sf, fill = NA, color = "black", size = 1) +
+  scale_color_viridis_d(option = "plasma", direction = -1, name = "Flow Status", begin = 0, end = 0.8) +
+  geom_sf(data = psa_sf, fill = NA, color = "black", linewidth = 1) +
   facet_wrap(vars(FlowStatus)) +
   theme_bw() +
   theme(axis.text = element_blank()) +
