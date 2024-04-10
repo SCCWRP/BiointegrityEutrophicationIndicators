@@ -62,7 +62,7 @@ asci_dev_gis2 <- asci_dev_gis |>
   rename(sitestatus = RefStatus) |>
   unique() |>
   mutate(
-    studyarea = if_else(sitestatus == "Reference", "Reference", "Non-reference"), 
+    studyarea =  case_when(sitestatus == "Reference" ~ "Reference", .default = "Non-reference"), 
     Type = "ASCI cal", 
     Type2 = "Cal"
   )
@@ -72,7 +72,7 @@ biostim_dev_gis2 <- biostim_dev_gis |>
   select(masterid = stationcode, all_of(env_vars), sitestatus) |> 
   unique() |>
   mutate(
-    studyarea = if_else(sitestatus == "Reference", "Reference", "Non-reference"), 
+    studyarea =  case_when(sitestatus == "Reference" ~ "Reference", .default = "Non-reference"), 
     Type = "Biostim cal", 
     Type2 = "Cal"
   )
