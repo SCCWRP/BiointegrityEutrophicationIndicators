@@ -55,8 +55,7 @@ summary_df <- readr::read_csv("data-raw/Part_1_model.summary2.m3.csv") |>
 calc_rel_risk <- function(df) {
   if (
     sum(df$Response == "Good") == nrow(df) | 
-    sum(df$Stressor == "Good") == nrow(df) #| 
-    #sum(df$Response == "Poor" & df$Stressor == "Poor") == 0
+    sum(df$Stressor == "Good") == nrow(df) 
   ) {
     myrisk <- data.frame(Type = "All_Sites", Subpopulation = "All Sites", Response = "Response", Stressor = "Stressor") |>
       mutate(
@@ -108,10 +107,7 @@ model_summary <- summary_df |>
   )
 
 
-cv_mp_rr_plot <- ggplot(
-    data = model_summary, 
-    aes(x = StudyArea, y = RR)
-  ) +
+cv_mp_rr_plot <- ggplot(data = model_summary, aes(x = StudyArea, y = RR)) +
   geom_pointrange(
     aes(color = Index, ymin = L95, ymax = U95),
     position = position_dodge(width = 0.25)
