@@ -98,6 +98,7 @@ table_10 <- summary_df |>
   select(
     Indicator = BSPretty, Index, Area = DevSet, `Pass both` = n_AgreePass, `Fail both` = n_AgreeFail, 
     `Fail BI` = n_Disagree_FailBI, `Fail ET` = n_Disagree_FailBS, RR = Estimate, L95 = LCB95Pct, U95 = UCB95Pct
-  )
+  ) |>
+  mutate(across(RR:U95, .fns = function(x) round(x, 1)))
 
 write.csv(table_10, "tables/Part_1_Table_10.csv", row.names = F)

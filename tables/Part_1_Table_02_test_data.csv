@@ -1,3 +1,3 @@
-"Data set","StudyArea","Non-reference","Reference","Total"
-"Test","Central Valley",309,2,311
-"Test","Modoc",71,55,126
+"Data set","StudyArea","Reference","Non-reference","Total"
+"Test","Central Valley",2,309,311
+"Test","Modoc",55,71,126

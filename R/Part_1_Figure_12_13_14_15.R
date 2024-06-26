@@ -182,7 +182,7 @@ test_data_scores2 <- test_data_scores |>
       tidyr::pivot_wider(names_from = name, values_from = value)  ) |>
   inner_join(test_data_gis_vars |> select(masterid, StudyArea)) |>
   tidyr::pivot_longer(cols = c(CSCI, ASCI_D, ASCI_H), names_to = "Index", values_to = "IndexScore", values_drop_na = T) |>
-  select(-c("Alkalinity_as_CaCO3", "Salinity", "AFDM_mg_m2", "Chl-a_ug_cm2", "PCT_MAP")) |>
+  select(-c("Alkalinity_as_CaCO3", "Salinity", "AFDM_g_m2", "Chl-a_mg_m2", "PCT_MAP")) |>
   tidyr::pivot_longer(
     cols = all_of(c(wq_var, phab_var)), 
     names_to = "Stressor", 

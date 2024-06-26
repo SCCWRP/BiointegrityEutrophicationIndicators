@@ -27,8 +27,6 @@ myquants <- mydf |>
     )
   ) |>
   mutate(
-    # y = dnorm(x, mean = 1, sd = 0.1) * 8.5 + 65,
-    # y_lin = (-1)^(x > 1) * x * 200 + (400 * (x > 1) - 100),
     label = case_when(
       group == "Reference biointegrity thresholds" & quant == "q01" ~ "Low\nStringency",
       group == "Reference biointegrity thresholds" & quant == "q10" ~ "Intermediate\nStringency",

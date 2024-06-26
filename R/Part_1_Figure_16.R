@@ -12,8 +12,9 @@ test_data_chem_phab <- readr::read_csv("data-raw/Part_1_test_data_chem_phab.csv"
   mutate(
     Nitrogen_Total_mgPerL = TN,
     Phosphorus_as_P_mgPerL = TP,
-    Chlorophyll_a_mgPerm2 = `Chl-a_ug_cm2`,
-    Ash_Free_Dry_Mass_mgPercm2 = AFDM_mg_m2 / 100
+    Chlorophyll_a_mgPerm2 = `Chl-a_mg_m2`,
+    # bs_models below use mg/cm2 for AFDM, so convert
+    Ash_Free_Dry_Mass_mgPercm2 = AFDM_g_m2 / 10
   )
 
 model.summary <- readr::read_csv("data-raw/Part_1_model.summary.csv")

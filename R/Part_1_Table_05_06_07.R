@@ -61,7 +61,8 @@ table_5 <- plot_dat |>
       summarize(MeanScore = mean(value, na.rm = T), n = n()) |>
       ungroup()
   ) |>
-  tidyr::pivot_wider(names_from = name, values_from = MeanScore)
+  tidyr::pivot_wider(names_from = name, values_from = MeanScore) |>
+  mutate(across(ASCI_D:CSCI, .fns = function(x) round(x, 2)))
 
 write.csv(table_5, file = "tables/Part_1_Table_05.csv", row.names = F)
 
@@ -96,6 +97,7 @@ table_6 <- plot_dat_gis_nat |>
   ungroup() |>
   mutate(rsq = Cor^2) |>
   filter(Index == "CSCI") |>
+  mutate(Cor = round(Cor, 2)) |>
   select(Variable = EnvVar, `Pearson's r` = Cor)
 
 write.csv(table_6, file = 'tables/Part_1_Table_06.csv', row.names = F)
@@ -126,7 +128,8 @@ table_7 <- cv_ref_scores |>
       SD_amongRef = c(0.16, 0.11, 0.11)
     )
   ) |>
-  tidyr::pivot_wider(names_from = Type, values_from = SD_amongRef)
+  tidyr::pivot_wider(names_from = Type, values_from = SD_amongRef) |>
+  mutate(CV_Ref = round(CV_Ref, 2))
 
 write.csv(table_7, file = "tables/Part_1_Table_07.csv", row.names = F)
 
@@ -140,4 +143,4 @@ mean_within_site_CSCI_var <- cv_ref_scores |>
   summarize(IndexScore_sd = sd(IndexScore, na.rm = T)) |>
   ungroup() |>
   na.omit() |>
-  summarize(mean_within_site_CSCI_var = mean(IndexScore_sd))
+  summarize(mean_within_site_CSCI_var = round(mean(IndexScore_sd), 2))

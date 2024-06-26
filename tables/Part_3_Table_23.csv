@@ -1,41 +1,41 @@
 "Indicator","Threshold type","Stream class","n","High","Intermediate","Low"
-"TN (mg/L)","Reference","Wadeable (standard)",599,0.1643,0.38026,2.5338
-"TN (mg/L)","Reference","RFI-N",47,0.423133333333333,0.67828,2.0645
-"TN (mg/L)","Reference","RFI-S",44,0.254483333333333,0.350983333333333,0.557995
-"TN (mg/L)","Best observed","CVF",99,0.03691,0.1432,0.32018
-"TN (mg/L)","Best observed","SB0",55,0,0.49,0.768741781111111
-"TN (mg/L)","Best observed","SB1",41,0,0.2555,0.38
-"TN (mg/L)","Best observed","SB2",48,0.0564,0.1931,0.816
-"TN (mg/L)","Best observed","HB",143,0,0.326,0.78784
-"TP (mg/L)","Reference","Wadeable (standard)",599,0.0446333333333333,0.0893381818181819,0.332955999999999
-"TP (mg/L)","Reference","RFI-N",47,0.093025,0.3971,2.1453
-"TP (mg/L)","Reference","RFI-S",44,0.05503,0.17491875,0.267074666666667
-"TP (mg/L)","Best observed","CVF",99,0.012116,0.0279,0.05685
-"TP (mg/L)","Best observed","SB0",53,0.00936,0.0384,0.07853
-"TP (mg/L)","Best observed","SB1",42,0.006702,0.0109725,0.0473375
-"TP (mg/L)","Best observed","SB2",48,0,0.009235,0.05011
-"TP (mg/L)","Best observed","HB",141,0,0.02745,0.0675
-"Chl-a (ug/cm2)","Reference","Wadeable (standard)",569,142.6,293,660.979080000002
-"Chl-a (ug/cm2)","Reference","RFI-N",43,216.6,363.5,1311.6108
-"Chl-a (ug/cm2)","Reference","RFI-S",43,169.173333333333,338.585,1313.925
-"Chl-a (ug/cm2)","Best observed","CVF",86,11.18,41.9,76.35
-"Chl-a (ug/cm2)","Best observed","SB0",48,0.15322,2.951902,12.0783
-"Chl-a (ug/cm2)","Best observed","SB1",40,0.594701607,3.677359,8.482011
-"Chl-a (ug/cm2)","Best observed","SB2",57,1.540756,5.294052,9.058702
-"Chl-a (ug/cm2)","Best observed","HB",128,0.93538376,2.85277859862779,8.815197
-"AFDM (mg/m2)","Reference","Wadeable (standard)",521,122.4,272.7,1290.90999999999
-"AFDM (mg/m2)","Reference","RFI-N",41,217,456,1096.0751284
-"AFDM (mg/m2)","Reference","RFI-S",42,258.22,562.08,958.45
-"AFDM (mg/m2)","Best observed","CVF",87,20.836,43.35,92.38
-"AFDM (mg/m2)","Best observed","SB0",51,0.9104755,2.42424,5.52
-"AFDM (mg/m2)","Best observed","SB1",40,1.07028647,3.2225,4.623293
-"AFDM (mg/m2)","Best observed","SB2",58,0.7944971,1.961499,4.1354535
-"AFDM (mg/m2)","Best observed","HB",131,0.6676484,2.19519725557461,4.39569
-"% cover","Reference","Wadeable (standard)",71,21,38,46.4
-"% cover","Reference","RFI-N",2,33.75,35.25,35.925
-"% cover","Reference","RFI-S",8,14.8,19.2,21.72
-"% cover","Best observed","CVF",13,0,0.2,7.4
-"% cover","Best observed","SB0",29,0,5.4,13.76
-"% cover","Best observed","SB1",23,1.66,5.6,11.6
-"% cover","Best observed","SB2",45,0.44,17,31.2
-"% cover","Best observed","HB",138,0,8,37
+"TN (mg/L)","Reference","Wadeable (standard)",529,0.131,0.233,1.639
+"TN (mg/L)","Reference","RFI-N",48,0.418,0.667,2.053
+"TN (mg/L)","Reference","RFI-S",44,0.254,0.351,0.558
+"TN (mg/L)","Best observed","CVF",99,0.037,0.143,0.32
+"TN (mg/L)","Best observed","SB0",59,0.341,0.497,0.781
+"TN (mg/L)","Best observed","SB1",44,0,0.261,0.379
+"TN (mg/L)","Best observed","SB2",59,0.163,0.436,0.924
+"TN (mg/L)","Best observed","HB",158,0.029,0.43,1.109
+"TP (mg/L)","Reference","Wadeable (standard)",529,0.024,0.058,0.202
+"TP (mg/L)","Reference","RFI-N",48,0.093,0.384,2.116
+"TP (mg/L)","Reference","RFI-S",44,0.055,0.175,0.267
+"TP (mg/L)","Best observed","CVF",99,0.012,0.028,0.055
+"TP (mg/L)","Best observed","SB0",54,0.01,0.039,0.075
+"TP (mg/L)","Best observed","SB1",43,0.007,0.011,0.048
+"TP (mg/L)","Best observed","SB2",48,0,0.009,0.05
+"TP (mg/L)","Best observed","HB",141,0,0.028,0.068
+"Chl-a (mg/m2)","Reference","Wadeable (standard)",529,14.3,29.7,59.9
+"Chl-a (mg/m2)","Reference","RFI-N",43,21.7,36.4,131.2
+"Chl-a (mg/m2)","Reference","RFI-S",43,17.9,33.9,131.4
+"Chl-a (mg/m2)","Best observed","CVF",86,1.1,4.2,7.6
+"Chl-a (mg/m2)","Best observed","SB0",46,1.3,9,43.7
+"Chl-a (mg/m2)","Best observed","SB1",39,1,5.5,26.6
+"Chl-a (mg/m2)","Best observed","SB2",55,7.7,18.4,61.4
+"Chl-a (mg/m2)","Best observed","HB",133,4.8,18.8,34.7
+"AFDM (g/m2)","Reference","Wadeable (standard)",529,11.4,27.3,95.4
+"AFDM (g/m2)","Reference","RFI-N",41,21.7,45.6,109.6
+"AFDM (g/m2)","Reference","RFI-S",42,26.1,56.2,95.8
+"AFDM (g/m2)","Best observed","CVF",87,2.1,4.3,9.2
+"AFDM (g/m2)","Best observed","SB0",49,3.2,15.6,30
+"AFDM (g/m2)","Best observed","SB1",39,2.2,7.2,25
+"AFDM (g/m2)","Best observed","SB2",56,3.7,14.6,28.4
+"AFDM (g/m2)","Best observed","HB",136,4.1,9.5,22
+"% cover","Reference","Wadeable (standard)",385,18,39,68
+"% cover","Reference","RFI-N",31,24,35,44
+"% cover","Reference","RFI-S",47,39,55,87
+"% cover","Best observed","CVF",71,0,0,2
+"% cover","Best observed","SB0",37,0,5,16
+"% cover","Best observed","SB1",34,1,4,9
+"% cover","Best observed","SB2",52,0,10,26
+"% cover","Best observed","HB",155,0,10,35

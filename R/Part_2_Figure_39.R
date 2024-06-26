@@ -33,6 +33,10 @@ chan_bi_bs_df <- chan_df |>
     cols = all_of(bs_varz), 
     names_to = "BSVar", values_to = "BSResult", values_drop_na = T
   ) |>
+  mutate(
+    BSResult = if_else(BSVar == "Chla_ugcm2", BSResult * 10, BSResult), # convert to mg/m2
+    BSVar = stringr::str_replace(BSVar, "Chla_ugcm2", "Chla_mgm2")
+  ) |>
   group_by(
     masterid, latitude, longitude, comid, huc, county, 
     psa_lu, RB, Classification, Class, Index, BSVar
@@ -51,7 +55,7 @@ chan_bi_bs_df <- chan_df |>
       labels = c("ISWP", "Watershed", "Bed and Bank")
     ),
     Class = gsub("Soft bottom-", "Soft bottom\n", Class),
-    Stressor = factor(BSVar, levels = bs_varz)
+    Stressor = factor(BSVar, levels = c("TN_mgL", "TP_mgL", "Chla_mgm2", "AFDM_gm2", "PCT_MAP", "SpCond_uScm", "Temp_C", "DO_mgL", "PCT_SAFN"))
   )
 
 lin_model_summary <- chan_bi_bs_df |>
@@ -101,7 +105,7 @@ make_plot <- function(data_, Class_) {
     facet_wrap(~ Stressor, scales = "free_x", nrow = 1) +
     geom_smooth(
       aes(color = Index, linetype = Evidence_Response, linewidth = Evidence_Response), 
-      method = "lm", se = F
+      method = "lm", se = F, show.legend = TRUE
     ) +
     scale_linewidth_manual(
       values = c(0.5, 1, 0), name = "Evidence of responsiveness?", 
@@ -113,7 +117,12 @@ make_plot <- function(data_, Class_) {
     ) +
     scale_color_brewer(palette = "Set1", drop = FALSE) +
     theme_bw() +
-    labs(title = Class_, x = "", y = "Index Score")
+    labs(title = Class_, x = "", y = "Index Score") +
+    guides(
+      linetype = guide_legend(order = 1),
+      linewidth = guide_legend(order = 1),
+      color = guide_legend(order = 2)
+    )
 }
 
 hard_bottom_plot <- make_plot(chan_bi_bs_df2, "Hard bottom")

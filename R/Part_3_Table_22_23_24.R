@@ -174,8 +174,8 @@ bi_thresholds_table <- mydf |>
       Type == "SB2" & Index %in% c("CSCI") ~ "Yes",
       Type == "HB" & Index %in% c("ASCI_D", "ASCI_H") ~ "Yes",
       Type == "HB" & Index %in% c("CSCI") ~ "No",
-      Type == "CC" & Index %in% c("ASCI_D", "ASCI_H") ~ "ND",
-      Type == "CC" & Index %in% c("CSCI") ~ "No",
+      (Type == "CC" | Type == "CC_CVF") & Index %in% c("ASCI_D", "ASCI_H") ~ "ND",
+      (Type == "CC" | Type == "CC_CVF") & Index %in% c("CSCI") ~ "No",
       .default = "ND"
     ),
     n_sites = n_sites,
@@ -200,7 +200,8 @@ bi_thresholds_table <- mydf |>
       Type2 == "Best observed" ~ qe70,
       .default = -999
     )
-  )
+  ) |>
+  mutate(across(High:Low, .fns = function(x) round(x, 2)))
 
 #Numbers from Theroux et al. 2022 or Mazor et al. 2016
 bi_thresholds_table$n_sites[bi_thresholds_table$Population == 'Wadeable (standard)'] <- c(418, 418, 473) 
@@ -209,14 +210,44 @@ write.csv(bi_thresholds_table, "tables/Part_3_Table_22.csv", row.names = F)
 
 ## Table 23 ####
 all_data_chem_phab <- readr::read_csv("data-raw/Part_3_all_data_chem_phab.csv")
+
+# use eutrophication reference data from Mazor et al. 2022
+bs_ref_data <- readr::read_csv("data-raw/Part_3_state_summary_r_table.csv") |>
+  mutate(
+    Type2 = "Reference",
+    Type = factor("Reference", levels = levels(mydf$Type)),
+    SiteStatus = NULL
+  ) |>
+  rename(
+    qe01 = Q01, qe10 = Q10, qe30 = Q30,
+    qe70 = Q70, qe90 = Q90, qe99 = Q99,
+    n_sites = n, name = variable
+  ) |>
+  mutate(
+    qe01 = if_else(name == "Ash_Free_Dry_Mass_mgPercm2", qe01 * 10, qe01), # convert to g/m2 just for AFDM
+    qe10 = if_else(name == "Ash_Free_Dry_Mass_mgPercm2", qe10 * 10, qe10), 
+    qe30 = if_else(name == "Ash_Free_Dry_Mass_mgPercm2", qe30 * 10, qe30), 
+    qe70 = if_else(name == "Ash_Free_Dry_Mass_mgPercm2", qe70 * 10, qe70), 
+    qe90 = if_else(name == "Ash_Free_Dry_Mass_mgPercm2", qe90 * 10, qe90), 
+    qe99 = if_else(name == "Ash_Free_Dry_Mass_mgPercm2", qe99 * 10, qe99),
+    name = case_when(
+      name == "Ash_Free_Dry_Mass_mgPercm2" ~ "AFDM_g_m2",
+      name == "Chlorophyll_a_mgPerm2" ~ "Chl-a_mg_m2",
+      name == "Nitrogen_Total_mgPerL" ~ "TN",
+      name == "Phosphorus_as_P_mgPerL" ~ "TP",
+      .default = name
+    )
+  )
+
 mydf_bs <- mydf |>
   select(masterid, Type, Type2) |>
+  filter(Type != "Reference") |>
   unique() |>
   left_join(
     all_data_chem_phab |>
-      select(masterid, sampledate, TN, TP, AFDM_mg_m2, `Chl-a_ug_cm2`, PCT_MAP)
+      select(masterid, sampledate, TN, TP, AFDM_g_m2, `Chl-a_mg_m2`, PCT_MAP)
   ) |>
-  tidyr::pivot_longer(cols = c(TN, TP, AFDM_mg_m2, `Chl-a_ug_cm2`, PCT_MAP), values_drop_na = T) |>
+  tidyr::pivot_longer(cols = c(TN, TP, AFDM_g_m2, `Chl-a_mg_m2`, PCT_MAP), values_drop_na = T) |>
   group_by(masterid, Type, Type2, name) |>
   summarize(value = mean(value)) |>
   ungroup() |>
@@ -231,24 +262,25 @@ mydf_bs <- mydf |>
     qe99 = quantile(value, probs = c(0.99), na.rm = T)
   ) |>
   ungroup() |>
+  bind_rows(bs_ref_data) |>
   mutate(
-    name = factor(name, levels = c("TN", "TP", "Chl-a_ug_cm2", "AFDM_mg_m2", "PCT_MAP"))
+    name = factor(name, levels = c("TN", "TP", "Chl-a_mg_m2", "AFDM_g_m2", "PCT_MAP"))
   ) |>
-  arrange(name, desc(Type2))
+  arrange(name, desc(Type2), Type)
 
 table_23 <- mydf_bs |>
   transmute(
     `Threshold type` = Type2,
     Population = if_else(Type == 'Reference', 'Wadeable (standard)', Type),
     Indicator = case_when(
-      name == "AFDM_mg_m2" ~ "AFDM (mg/m2)",
-      name == "Chl-a_ug_cm2" ~ "Chl-a (ug/cm2)",
+      name == "AFDM_g_m2" ~ "AFDM (g/m2)",
+      name == "Chl-a_mg_m2" ~ "Chl-a (mg/m2)",
       name == "PCT_MAP" ~ "% cover",
       name == "TN" ~ "TN (mg/L)",
       name == "TP" ~ "TP (mg/L)",
       .default = name
     ),
-    Indicator = factor(Indicator, levels = c("TN (mg/L)", "TP (mg/L)", "Chl-a (ug/cm2)", "AFDM (mg/m2)", "% cover")),
+    Indicator = factor(Indicator, levels = c("TN (mg/L)", "TP (mg/L)", "Chl-a (mg/m2)", "AFDM (g/m2)", "% cover")),
     n = n_sites,
     High = case_when(
       Type2 == "Reference" ~ qe70,
@@ -267,6 +299,16 @@ table_23 <- mydf_bs |>
     )
   ) |>
   filter(!(Population %in% c("SB0_CVF", "HB_CVF", "CC_CVF"))) |>
+  mutate(across(High:Low, .fns = function(x) {
+      case_when(
+        Indicator == "AFDM (g/m2)" ~ round(x, 1),
+        Indicator == "TN (mg/L)" ~ round(x, 3),
+        Indicator == "TP (mg/L)" ~ round(x, 3),
+        Indicator == "Chl-a (mg/m2)" ~ round(x, 1),
+        Indicator == "% cover" ~ round(x)
+      )
+    })
+  ) |>
   select(Indicator, `Threshold type`, `Stream class` = Population, n, High, Intermediate, Low) |>
   arrange(Indicator, desc(`Threshold type`)) 
 
@@ -274,7 +316,6 @@ write.csv(table_23, "tables/Part_3_Table_23.csv", row.names = F)
 
 ## Table 24 ####
 
-# results from Mazor et al. (2022)
 mazor2022_thresholds <- readr::read_csv("data-raw/Part_3_model.summary_thresholds_woInorganics.csv") |>
   filter(BIgoal %in% c("Ref01", "Ref10", "Ref30"), Stratum == "California") |>
   transmute(
@@ -290,6 +331,9 @@ mazor2022_thresholds <- readr::read_csv("data-raw/Part_3_model.summary_threshold
     Threshold = p80
   ) |>
   tidyr::pivot_wider(names_from = BSPretty, values_from = Threshold) |>
+  mutate(
+    AFDM = AFDM * 10 # convert from mg/cm2 to g/m2
+  ) |>
   filter(Stringency == 'Intermediate') |>
   transmute(
     Population = Class, Index, StandardUsageSupported = "Yes", 
@@ -297,15 +341,21 @@ mazor2022_thresholds <- readr::read_csv("data-raw/Part_3_model.summary_threshold
   )
 
 mydf.c <- readr::read_csv("data-raw/Part_3_mydf.c.csv") |>
-  mutate(PSA2 = if_else(PSA6c %in% c("NC", "SN"), "Wet", "Arid"))
+  mutate(
+    PSA2 = if_else(PSA6c %in% c("NC", "SN"), "Wet", "Arid"),
+    Ash_Free_Dry_Mass_gPerm2 = Ash_Free_Dry_Mass_mgPercm2 * 10, # convert from mg/cm2 to g/m2
+  )
 
 asci.df.c <- readr::read_csv("data-raw/Part_3_asci.df.c.csv") |>
-  mutate(PSA2 = if_else(PSA6c %in% c("NC", "SN"), "Wet", "Arid"))
+  mutate(
+    PSA2 = if_else(PSA6c %in% c("NC", "SN"), "Wet", "Arid"),
+    Ash_Free_Dry_Mass_gPerm2 = Ash_Free_Dry_Mass_mgPercm2 * 10, # convert from mg/cm2 to g/m2
+  )
 
 #Create vectors of modeling variables
 #Biostiulatory variables
 chem.varz <- c("Nitrogen_Total_mgPerL", "Phosphorus_as_P_mgPerL")
-om.varz <- c("Chlorophyll_a_mgPerm2", "Ash_Free_Dry_Mass_mgPercm2", "PCT_MAP")
+om.varz <- c("Chlorophyll_a_mgPerm2", "Ash_Free_Dry_Mass_gPerm2", "PCT_MAP")
 bs.varz <- c(chem.varz, om.varz)
 bs.varz_pretty <- c("Total N", "Total P", "Chl-a", "AFDM", "% cover") #This is for graphs and plots
 bs.varz.df <- data.frame(BiostimVar = bs.varz, BSPretty = factor(bs.varz_pretty, levels = bs.varz_pretty))
@@ -332,37 +382,29 @@ length.out.x <- 1000
 max_TN <- 3
 max_TP <- 1.5
 max_chl <- 300
-max_afdm <- 40
+max_afdm <- 400
 max_cov <- 100
 
 my.newdfs <- data.frame(
     Nitrogen_Total_mgPerL = seq(from = 0, to = max_TN, length.out = length.out.x),
     Phosphorus_as_P_mgPerL = seq(from = 0, to = max_TP, length.out = length.out.x),
     Chlorophyll_a_mgPerm2 = seq(from = 0, to = max_chl, length.out = length.out.x),
-    Ash_Free_Dry_Mass_mgPercm2 = seq(from = 0, to = max_afdm, length.out = length.out.x),
+    Ash_Free_Dry_Mass_gPerm2 = seq(from = 0, to = max_afdm, length.out = length.out.x),
     PCT_MAP = seq(from = 0, to = max_cov, length.out = length.out.x)
   ) |>
   tidyr::pivot_longer(cols = everything(), names_to = "BiostimVar", values_to = "Biostim") |>
   tidyr::nest(.by = "BiostimVar")
 
-model.summary <- mod.dat |>
+model_df <- mod.dat |>
   filter(DevSet == "Cal", SelectedSample == "Selected") |>
   tidyr::pivot_longer(cols = Nitrogen_Total_mgPerL:PCT_MAP, names_to = "BiostimVar", values_to = "Biostim") |>
+  na.omit() |>
   group_by(Index, BiostimVar) |>
   mutate(
-    model = list(scam::scam(IndexScore ~ s(Biostim, bs = "mpd"))),
-    performance = purrr::map(model, function(mod) {
-      list(AIC = mod$aic, gcv.ubre = mod$gcv.ubre, dgcv.ubre = mod$dgcv.ubre)
-    }),
-    AIC_null = scam::scam(IndexScore ~ 1)$aic,
-    summary = purrr::map(model, function(mod) {
-      summ <- summary(mod)
-      list(rsq = summ$r.sq, biostim_F = summ$s.table[3], biostim_p = summ$s.table[4], n = summ$n)
-    }),
-  ) |>
-  tidyr::unnest_wider(c(performance, summary))
+    model = list(scam::scam(IndexScore ~ s(Biostim, bs = "mpd")))
+  )
 
-my.models.predictions <- model.summary |>
+my.models.predictions <- model_df |>
   inner_join(my.newdfs) |>
   select(model, data) |>
   distinct() |>
@@ -397,11 +439,11 @@ table_24 <- bi_thresholds_table |>
         "Wadeable streams (SCAM, present study)", "CVF", "SB0", "SB1", "SB2", "HB", "CC"
       )
     ),
-    `Total N` = if_else(`Total N` == max_TN, NA_real_, `Total N`),
-    `Total P` = if_else(`Total P` == max_TP, NA_real_, `Total P`),
-    `Chl-a` = if_else(`Chl-a` == max_chl, NA_real_, `Chl-a`),
-    AFDM = if_else(AFDM == max_afdm, NA_real_, AFDM),
-    `% cover` = if_else(`% cover` == max_cov, NA_real_, `% cover`)
+    `Total N` = if_else(`Total N` == max_TN, NA_real_, `Total N`) |> round(3),
+    `Total P` = if_else(`Total P` == max_TP, NA_real_, `Total P`) |> round(3),
+    `Chl-a` = if_else(`Chl-a` == max_chl, NA_real_, `Chl-a`) |> round(1),
+    AFDM = if_else(AFDM == max_afdm, NA_real_, AFDM) |> round(1),
+    `% cover` = if_else(`% cover` == max_cov, NA_real_, `% cover`) |> round()
   ) |>
   arrange(Population, Index) |>
   filter(!is.na(value)) |>

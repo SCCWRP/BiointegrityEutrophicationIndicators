@@ -217,7 +217,7 @@ slope_fines_plot <- ggplot(
   guides(fill = guide_legend(override.aes = list(size = 2))) +
   theme(legend.position = "bottom")
 
-ggsave(slope_fines_plot, filename = "figures/Part_1_Figure_04.jpg", height = 4, width = 6, dpi = 300)
+ggsave(slope_fines_plot, filename = "figures/Part_1_Figure_04_new.jpg", height = 4, width = 6, dpi = 300)
 
 
 ## Figure 5 ####
@@ -250,7 +250,7 @@ nat_asci_pca_loadings <- data.frame(nat_asci_pca$rotation)
 nat_asci_pca_loadings$Var <- nat_vars
 
 
-pca_dat_biostim <- pca_dat1 |> filter(Type.x %in% c("Biostim", "Test"))
+pca_dat_biostim <- pca_dat1 |> filter(Type.x %in% c("ERM", "Test"))
 pca_dat_biostim_matrix <- pca_dat_biostim |> select(all_of(nat_vars))
 nat_biostim_pca <- prcomp(pca_dat_biostim_matrix, scale = T, retx = T,center = T)
 colnames(nat_biostim_pca$x) <- paste("Nat", colnames(nat_biostim_pca$x), sep = ".")

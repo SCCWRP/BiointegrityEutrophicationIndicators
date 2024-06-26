@@ -7,7 +7,7 @@ table_2_test_data <- readr::read_csv('data-raw/Part_1_test_data_gis.csv') |>
   tally() |>
   tidyr::pivot_wider(names_from = RefStatus, values_from = n) |>
   mutate(`Data set` = "Test") |>
-  select(`Data set`, StudyArea, `Non-reference`, Reference) |>
+  select(`Data set`, StudyArea, Reference, `Non-reference`) |>
   rowwise() |>
   mutate(Total = Reference + `Non-reference`) |>
   ungroup()

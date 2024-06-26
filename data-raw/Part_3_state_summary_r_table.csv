@@ -1,0 +1,6 @@
+"variable","SiteStatus","n","Q01","Q10","Q30","Q70","Q90","Q99"
+"Ash_Free_Dry_Mass_mgPercm2","Ref",529,0,0.195,0.379,1.1354,2.727,9.54
+"Chlorophyll_a_mgPerm2","Ref",529,0,2.085,4.862,14.2846,29.712,59.85
+"Nitrogen_Total_mgPerL","Ref",529,0,0.02894,0.06312,0.131,0.2332,1.639
+"PCT_MAP","Ref",385,0,0,2,18,39,67.6199999999999
+"Phosphorus_as_P_mgPerL","Ref",529,0,0.003,0.00901,0.0245,0.05779,0.202

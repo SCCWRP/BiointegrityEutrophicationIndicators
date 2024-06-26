@@ -36,7 +36,13 @@ anova_df <- bind_rows(
     broom::tidy() |>
     mutate(Index = "ASCI_H")
 ) |>
-  select(Index, Term = term, DF = df, SS = sumsq, MS = meansq, `F` = statistic, p = p.value)
+  select(Index, Term = term, DF = df, SS = sumsq, MS = meansq, `F` = statistic, p = p.value) |>
+  mutate(
+    SS = round(SS, 3),
+    MS = round(MS, 4),
+    `F` = round(`F`, 1),
+    p = round(p, 3)
+  )
 
 write.csv(anova_df, "tables/Part_1_Table_11.csv", row.names = F)
 
@@ -61,7 +67,13 @@ anova_df_tukey <- bind_rows(
       mutate(Index = "ASCI_H")
   ) |>
   filter(!(contrast %in% c("RFI:Southern-P:Northern", "P:Southern-RFI:Northern"))) |>
-  select(Index, Contrast = contrast, Difference = estimate, L95 = conf.low, U95 = conf.high, `p-value` = adj.p.value)
+  select(Index, Contrast = contrast, Difference = estimate, L95 = conf.low, U95 = conf.high, `p-value` = adj.p.value) |>
+  mutate(
+    Difference = round(Difference, 2),
+    L95 = round(L95, 2),
+    U95 = round(U95, 2),
+    `p-value` = round(`p-value`, 2)
+  )
 
 write.csv(anova_df_tukey, "tables/Part_1_Table_12.csv", row.names = F)
 
@@ -172,6 +184,7 @@ int_ref_distributions <- int_ref_distributions_empirical |>
   ) |>
   filter(n != 1) |> 
   mutate(RB = purrr::map_chr(RB, function(x) paste("Regional Board", toString(x)))) |>
-  rename(`Flow status` = Flow_SOP2)
+  rename(`Flow status` = Flow_SOP2) |>
+  mutate(across(Mean:q01_n, .fns = function(x) round(x, 2)))
 
 write.csv(int_ref_distributions, "tables/Part_1_Table_13.csv", row.names = F)

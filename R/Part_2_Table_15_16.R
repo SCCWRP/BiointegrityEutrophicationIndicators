@@ -55,14 +55,14 @@ high_score_table <- chan_bi_df |>
     n_pass = sum(Score > Ref10)
   ) |>
   ungroup() |>
-  mutate(PctPass = 100 * (n_pass / n)) |>
+  mutate(PctPass = round(100 * (n_pass / n))) |>
   filter(!(Class %in% c("Natural", "Agricultural"))) |>
   bind_rows(
     tibble(
       Classification = factor(c("Watershed")), 
       Class = "Ambiguous",
       Index = c("ASCI_D", "ASCI_H"),
-      n=0
+      n = 0
     )
   ) |>
   arrange(Classification, Class, Index) |>
@@ -98,6 +98,10 @@ chan_bi_bs_df <- chan_df |>
     cols = all_of(bs_varz), 
     names_to = "BSVar", values_to = "BSResult", values_drop_na = T
   ) |>
+  mutate(
+    BSResult = if_else(BSVar == "Chla_ugcm2", BSResult * 10, BSResult), # convert to mg/m2
+    BSVar = stringr::str_replace(BSVar, "Chla_ugcm2", "Chla_mgm2")
+  ) |>
   group_by(
     masterid, latitude, longitude, comid, huc, county, 
     psa_lu, RB, Classification, Class, Index, BSVar
@@ -116,7 +120,11 @@ chan_bi_bs_df <- chan_df |>
       labels = c("ISWP", "Watershed", "Bed and Bank")
     ),
     Class = gsub("Soft bottom-", "Soft bottom\n", Class),
-    Stressor = factor(BSVar, levels = bs_varz, labels = bs_pretty),
+    Stressor = factor(
+      BSVar, 
+      levels = c("TN_mgL", "TP_mgL", "Chla_mgm2", "AFDM_gm2", "PCT_MAP", "SpCond_uScm", "Temp_C", "DO_mgL", "PCT_SAFN"), 
+      labels = bs_pretty
+    ),
     Class = gsub("\n", "-", Class)
   )
 
@@ -150,6 +158,19 @@ lin_model_summary <- chan_bi_bs_df |>
       .default = "Insufficient data"
     )
   ) |>
-  select(-c(lms, Classification), `Do linear models provide evidence of index responsiveness to stress?` = Evidence_Response)
+  select(-c(lms, Classification), `Do linear models provide evidence of index responsiveness to stress?` = Evidence_Response) |>
+  mutate(
+    across(Slope:U90, .fns = function(x) {
+      case_when(
+        Stressor == "PCT_MAP" ~ round(x),
+        Stressor %in% c("AFDM", "Chla") ~ round(x, 1),
+        Stressor %in% c("TN", "TP", "Temp", "DO") ~ round(x, 3),
+        Stressor == "SpCond" ~ round(x),
+        Stressor == "PCT_SAFN" ~ round(x),
+        .default = round(x, 1)
+      )
+    }),
+    Power = round(Power, 2)
+  )
 
 write.csv(lin_model_summary, "tables/Part_2_Table_16.csv", row.names = F)
