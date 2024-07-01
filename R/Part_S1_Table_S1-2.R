@@ -13,7 +13,22 @@ psa_sf <- sf::st_read("data-raw/Part_1_shapefiles/PSA6_2011.shp") |>
     )
   )
 
-nonperen_sf <- readr::read_csv("data-raw/Part_S1_Andy_Nonperen_data_ASCI_CL_11_4_2022.csv") |>
+nonperen_df <- readr::read_csv("data-raw/Part_S1_Andy_Nonperen_data_ASCI_CL_11_4_2022.csv") |>
+  mutate(
+    sampledate = lubridate::mdy(SampleDate)
+  )
+
+sample_exclusion <- readr::read_csv('data-raw/Part_1_sample_metadata_review_06252024.csv') |>
+  filter(!Include) |>
+  mutate(sampledate = lubridate::mdy(SampleDate)) |>
+  select(StationCode, sampledate)
+
+nonperen_df <- nonperen_df |>
+  anti_join(sample_exclusion, by = c("StationCode", "sampledate"))
+
+
+
+nonperen_sf <- nonperen_df |>
   mutate(
     FlowStatus = case_when(
       Flow_SOP == "RFI_SFI" ~ "SFI",
@@ -27,7 +42,7 @@ nonperen_sf <- readr::read_csv("data-raw/Part_S1_Andy_Nonperen_data_ASCI_CL_11_4
       .default = "Other"
     )
   ) |>
-  st_as_sf(coords = c("New_Long", "New_Lat"), crs = 4326)
+  sf::st_as_sf(coords = c("New_Long", "New_Lat"), crs = 4326)
 
 table_S1_2 <- nonperen_sf |>
   st_transform(crs = st_crs(psa_sf)) |>

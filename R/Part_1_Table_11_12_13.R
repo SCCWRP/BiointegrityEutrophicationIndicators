@@ -6,6 +6,13 @@ nonperen_df <- readr::read_csv("data-raw/Part_1_Andy_Nonperen_data_ASCI.csv") |>
     sampledate = lubridate::mdy(SampleDate)
   )
 
+sample_exclusion <- readr::read_csv('data-raw/Part_1_sample_metadata_review_06252024.csv') |>
+  filter(!Include) |>
+  mutate(sampledate = lubridate::mdy(SampleDate))
+
+nonperen_df <- nonperen_df |>
+  anti_join(sample_exclusion, by = c("StationCode", "sampledate"))
+
 plot_dat <- nonperen_df |>
   mutate(Flow_SOP2 = if_else(Flow_SOP == "RFI_SFI", "SFI", Flow_SOP)) |>
   group_by(RB, StationCode, Flow_SOP, Flow_SOP2) |>
@@ -41,10 +48,11 @@ anova_df <- bind_rows(
     SS = round(SS, 3),
     MS = round(MS, 4),
     `F` = round(`F`, 1),
-    p = round(p, 3)
+    p = round(p, 3),
+    Term = stringr::str_replace_all(Term, "Flow_SOP2", "Flow status")
   )
 
-write.csv(anova_df, "tables/Part_1_Table_11.csv", row.names = F)
+write.csv(anova_df, "tables/Part_1_Table_11.csv", row.names = F, na = "")
 
 
 ## Table 12 ####

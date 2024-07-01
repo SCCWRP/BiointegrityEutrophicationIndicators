@@ -42,6 +42,13 @@ nonperen_df <- readr::read_csv("data-raw/Part_1_Andy_Nonperen_data_ASCI.csv") |>
     Region = if_else(RB %in% c(4, 7, 8, 9), "Southern", "Northern")
   )
 
+sample_exclusion <- readr::read_csv('data-raw/Part_1_sample_metadata_review_06252024.csv') |>
+  filter(!Include) |>
+  mutate(sampledate = lubridate::mdy(SampleDate))
+
+nonperen_df <- nonperen_df |>
+  anti_join(sample_exclusion, by = c("StationCode", "sampledate"))
+
 test_data_gis <- readr::read_csv("data-raw/Part_1_test_data_gis.csv") |>
   mutate(logwsa = log10(area_sqkm)) |>
   rename_with(.fn = tolower)

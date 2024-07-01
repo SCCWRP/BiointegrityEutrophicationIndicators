@@ -26,7 +26,21 @@ base_map <- ggplot() +
     panel.grid = element_blank()
   )
 
-nonperen_sf <- readr::read_csv("data-raw/Part_S1_Andy_Nonperen_data_ASCI_CL_11_4_2022.csv") |>
+nonperen_df <- readr::read_csv("data-raw/Part_S1_Andy_Nonperen_data_ASCI_CL_11_4_2022.csv") |>
+  mutate(
+    sampledate = lubridate::mdy(SampleDate)
+  )
+
+sample_exclusion <- readr::read_csv('data-raw/Part_1_sample_metadata_review_06252024.csv') |>
+  filter(!Include) |>
+  mutate(sampledate = lubridate::mdy(SampleDate))
+
+nonperen_df <- nonperen_df |>
+  anti_join(sample_exclusion, by = c("StationCode", "sampledate"))
+
+
+
+nonperen_sf <- nonperen_df |>
   mutate(
     FlowStatus = case_when(
       Flow_SOP == "RFI_SFI" ~ "SFI",

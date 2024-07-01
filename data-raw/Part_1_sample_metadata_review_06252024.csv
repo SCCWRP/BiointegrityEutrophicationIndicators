@@ -1,0 +1,137 @@
+StationCode,SampleDate,ReachLength,Transects,GrabSize_m2,BMI_CollectionMethod,WettedWidth_Median,WettedWidth_Mean,Flow_VisEstimated,Dry_Percent,Dry_Glide_Percent,Flow,Velocity_Max,DeepestDepth_Mean,SampleComments,FieldComments,HabitatComments,Status,RDM,Mcover,Include,Redundant
+201CHE300,6/18/2012,150,11,0.99,BMI_RWB,1.8,1.9,1-5 cfs,0,42.25,,0.12,13.2,,,,Likely ok,keep,,TRUE,FALSE
+201EAS050,4/13/2005,,,0.81,BMI_CSBP_Comp,,,,,,,,,,,,Presumed ok,keep,Yes,TRUE,FALSE
+201HAL400,5/24/2016,150,11,0.99,BMI_RWB,2.2,2.6,,0,33.25,,,15.7,,FLV (Velocity too low to be measured),FLV (Velocity too low to be measured),Likely ok,Keep,,TRUE,FALSE
+201RDW790,5/14/2019,150,11,0.99,BMI_RWB,1.6,1.7,,0,29.5,,,15.0,,,,Likely ok,keep,,TRUE,FALSE
+201WLK170,4/18/2001,,,0.27,BMI_CSBP_Trans,,,,,,,,,,,,Presumed ok,keep,Yes,TRUE,FALSE
+202R00214,6/6/2013,,,,,,,,,,,,,,,,Presumed ok,keep,,TRUE,FALSE
+203R00983,6/6/2013,150,8,0.99,BMI_RWB,1.0,1.1,Trickle (<0.1 cfs),87.5,48.25,,,2.2,,,"Surface water discontinuous – three transects (H, I, K) dry and not sampled for algae or BMI. Three additional transects sampled for BMI, into a separate container. This BMI sample was combined with the other BMI sample. Puddle and trickles and seeps.",Exclude sample,"Exclude due to discontinuous flow, super shallow",,FALSE,FALSE
+204AMCADD,4/25/2014,,,,,,,,,,,,,,,,Presumed ok,keep,,TRUE,FALSE
+204IND200,4/29/2008,150,11,0.99,BMI_RWB,3.1,3.2,1-5 cfs,0,5.25,,0.7,14.3,,,FDR (Dry Channel - may apply to single or multiple points/transects),Likely ok,keep,,TRUE,FALSE
+204IND200,4/13/2009,150,11,0.99,BMI_RWB,3.2,3.1,0.1 -1 cfs,0,3,,0.5,20.5,,,FDR (Dry Channel - may apply to single or multiple points/transects),Likely ok,keep,,TRUE,FALSE
+204IND200,5/25/2010,150,,0.99,BMI_RWB,3.6,4.3,5-20 cfs,9,8,,1.08,16.1,,,FDR (Dry Channel - may apply to single or multiple points/transects),Likely ok,keep,,TRUE,FALSE
+204IND200,4/28/2015,150,11,0.99,BMI_RWB,3.0,3.2,1-5 cfs,5,28.75,,0.11,12.9,Sampled 3 days after a rain event (>0.5 inches) that might have caused streambed scour,,FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,"Exclude due to discontinuous flow, scour",,FALSE,FALSE
+204IND200,6/15/2015,150,11,0.99,BMI_RWB,2.2,2.1,0.1 -1 cfs,37.5,43.5,,0.11,10.8,,,FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+204INDSAR,5/6/2004,,,0.27,BMI_CSBP_Trans,,,,,,,,,,,,Presumed ok,keep,Yes,TRUE,FALSE
+204LACSAC,5/11/2004,,,0.27,BMI_CSBP_Trans,,,,,,,,,,,,Presumed ok,keep,Yes,TRUE,FALSE
+204SIN300,5/15/2012,150,11,0.99,BMI_RWB,2.4,2.6,0.1 -1 cfs,0.5,46.4,,0,11.1,,,FDR (Dry Channel - may apply to single or multiple points/transects),Likely ok,keep,,TRUE,FALSE
+204SLE180,5/2/2001,,,0.27,BMI_CSBP_Trans,,,,,,,,,,,,Presumed ok,keep,Yes,TRUE,FALSE
+204SMA180,4/2/2003,,,0.27,BMI_CSBP_Trans,,,,,,,,,,,,Presumed ok,keep,Yes,TRUE,FALSE
+204SMA180,4/15/2004,,,0.72,BMI_TRC,,,,,,,,,,,,Presumed ok,keep,Yes,TRUE,FALSE
+204SMA180,3/20/2009,,,,,,,,,,,,,,,,Presumed ok,keep,,TRUE,FALSE
+204VAL400,5/19/2014,150,11,0.99,BMI_RWB,2.3,3.4,1-5 cfs,0,37.75,,0.35,18.5,,,FDR (Dry Channel - may apply to single or multiple points/transects),Likely ok,keep,,TRUE,FALSE
+205AAG375,5/14/2014,150,11,0.99,BMI_RWB,2.6,2.7,Trickle (<0.1 cfs),0,47.75,,0.2,10.4,,,FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,exclude,,FALSE,FALSE
+205AAG400,6/5/2012,150,11,0.99,BMI_RWB,1.6,1.7,1-5 cfs,0,39.5,,0.05,9.2,,,FDR (Dry Channel - may apply to single or multiple points/transects),Likely ok,keep,,TRUE,FALSE
+205ADO060,4/5/2004,,,0.72,BMI_TRC,,,,,,,,,,,,Presumed ok,keep,Yes,TRUE,FALSE
+205ADO060,4/11/2005,,,0.72,BMI_TRC,,,,,,,,,,,,Presumed ok,keep,Yes,TRUE,FALSE
+205ADO060,3/20/2009,,,,,,,,,,,,,,,,Presumed ok,keep,,TRUE,FALSE
+205CHAxxx,6/23/1998,,,0.27,BMI_CSBP_Trans,,,,,,,,,,,,Presumed ok,keep,,TRUE,FALSE
+205COY585,5/28/2013,150,11,0.99,BMI_RWB,6.0,5.5,Trickle (<0.1 cfs),0,48,,0.005,22.0,,,FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,exclude,,FALSE,FALSE
+205COY600,5/2/2004,,,0.72,BMI_TRC,,,,,,,,,,,,Presumed ok,keep,Yes,TRUE,FALSE
+205COY610,4/30/2008,250,11,0.99,BMI_RWB,8.6,9.2,1-5 cfs,0,7,,0.48,40.0,,,FDR (Dry Channel - may apply to single or multiple points/transects),Likely ok,keep,,TRUE,FALSE
+205COY610,4/15/2009,250,11,0.99,BMI_RWB,8.1,9.2,0.1 -1 cfs,0,28.5,,0.47,41.0,,,FDR (Dry Channel - may apply to single or multiple points/transects),Likely ok,keep,,TRUE,FALSE
+205COY610,6/3/2010,250,,0.99,BMI_RWB,9.4,10.1,1-5 cfs,0,23.5,,1.96,39.9,,,FDR (Dry Channel - may apply to single or multiple points/transects),Likely ok,keep,,TRUE,FALSE
+205COY610,5/11/2015,250,11,0.99,BMI_RWB,7.0,7.4,0.1 -1 cfs,15.2,41.3,,0.5,33.3,,,FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+205COY610,5/28/2019,250,11,0.99,BMI_RWB,10.3,10.6,,0,24,,0.5,47.8,,,FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+205COY615,6/3/2014,150,11,0.99,BMI_RWB,4.9,5.6,Trickle (<0.1 cfs),4,41.85,,0.4,38.4,,,FDR (Dry Channel - may apply to single or multiple points/transects) some sections too deep to sample (pools about 2m deep),Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+205COY835,5/28/2015,150,11,0.99,BMI_RWB,1.3,1.4,0.1 -1 cfs,17,40,,0.04,13.7,,,FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+205COY850,5/21/2012,150,11,0.99,BMI_RWB,3.5,3.7,1-5 cfs,0,31.75,,0.42,31.3,,,FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+205COY852,6/2/2015,150,11,0.99,BMI_RWB,5.5,6.1,Trickle (<0.1 cfs),19.5,41.5,,0.11,31.4,,,FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+205COY853,5/29/2014,150,11,0.99,BMI_RWB,3.8,4.2,1-5 cfs,0,41.5,,0.32,22.0,,,FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+205COY900,5/16/2012,150,11,0.99,BMI_RWB,7.0,6.8,1-5 cfs,1,40.75,,0.9,47.6,,,FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+205COY930,5/7/2013,150,11,0.99,BMI_RWB,8.3,8.7,0.1 -1 cfs,0,50,,0.14,10.4,,,FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+205CYCAHH,6/10/2008,150,11,0.99,BMI_RWB,3.1,3.4,,5,38.75,,0.1,17.7,,,FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+205CYCAHH,6/12/2017,150,11,0.99,BMI_RWB,16.0,15.8,,0,17.75,,,29.2,,,FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+205R00021,5/16/2012,150,11,0.99,BMI_RWB,2.7,3.6,0.1 -1 cfs,0,25.25,,,11.6,,"FLV (Velocity too low to be measured),FS (Too Shallow for probe measurement)","FLV (Velocity too low to be measured),FS (Too Shallow for probe measurement)",Likely ok,keep,,TRUE,FALSE
+205R00097,6/3/2014,,,,,,,,,,,,,,,,Exclude sample,"Exclude. Same as 205COY615, which we excluded on this date",,FALSE,TRUE
+205R00213,4/27/2016,150,11,,,2.2,2.4,0.1 -1 cfs,0,36,,0.79,12.1,,,,Likely ok,keep,,TRUE,FALSE
+205R00275,6/12/2013,,,,,,,,,,,,,,,,Presumed ok,keep,,TRUE,FALSE
+205R00289,5/28/2013,,,,,,,,,,,,,,,,Exclude sample,Exclude. Same as 205COY585 which we excluded on this same date,,FALSE,TRUE
+205R00296,5/6/2013,,,,,,,,,,,,,,,,Exclude,"Exclude. Same as 205WUN550, which we excluded on this date",,FALSE,TRUE
+205R00322,5/14/2014,,,,,,,,,,,,,,,,Exclude sample,"Exclude. Same as 205AAG375, which is excluded on this date",,FALSE,TRUE
+205R00330,4/30/2014,150,11,0.99,BMI_RWB,1.4,1.8,Trickle (<0.1 cfs),5,28.25,,,8.2,,FLV (Velocity too low to be measured),FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+205R00337,5/7/2013,,,,,,,,,,,,,,,,Exclude,"Exclude. Same as 205COY930, which we excluded on this date",,FALSE,TRUE
+205R00401,5/29/2014,,,,,,,,,,,,,,,,Exclude,"Exclude. Same as 205COY853, which we excluded on this date",,FALSE,TRUE
+205R00593,5/28/2015,,,,,,,,,,,,,,,,Exclude,"Exclude. Same as 205COY835, which we excluded on this date",,FALSE,TRUE
+205R00609,5/10/2017,150,11,0.99,BMI_RWB,4.9,4.7,1-5 cfs,0,44.5,,,13.4,Filamentous and nostoc were abundant Some moss in sample gorowing with algae.,,FLV (Velocity too low to be measured),Likely ok,keep,,TRUE,FALSE
+205R00657,6/2/2015,,,,,,,,,,,,,,,,Exclude,Exclude. Same as 205COY852 which we excluded on this date,,FALSE,TRUE
+205R00769,5/10/2018,150,11,0.99,BMI_RWB,3.6,3.6,1-5 cfs,0,31.25,,1.12,32.3,Station sampled less than 30 days after a significant rainfall event. Not enough filamentous algae for roll. Collected DNA sample. Lots of nostoc/cladaphora throughout.,,,Likely ok,APT tool does not show a meaningful amount of precipitation within several weeks of sampling date.,,TRUE,FALSE
+205R01299,5/15/2014,150,11,0.99,BMI_RWB,2.9,2.9,Trickle (<0.1 cfs),0.5,32.75,,,22.0,,FLV (Velocity too low to be measured); 205R01299,FLV (Velocity too low to be measured),Exclude sample,exclude,,FALSE,FALSE
+205R03091,5/18/2017,150,11,0.99,BMI_RWB,3.5,3.5,1-5 cfs,0,27.5,,1.48,27.4,Filamentous in upper third of reach where canopy opens up - very little algae elsewhere.,,,Likely ok,keep,,TRUE,FALSE
+205R04217,5/3/2018,150,11,0.99,BMI_RWB,2.0,1.9,Trickle (<0.1 cfs),0,48,,,6.5,Station sampled less than 30 days after a significant rainfall event. Open canopy; more filamentous/nostoc in upper half of reach. Cows use riparian area.,,FLV (Velocity too low to be measured),Exclude sample,exclude,,FALSE,FALSE
+205SFC880,6/19/2012,150,11,0.99,BMI_RWB,2.7,3.9,1-5 cfs,9,42.75,,0.12,12.3,,,FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+205WUN450,6/11/2012,150,11,0.99,BMI_RWB,2.5,2.6,0.1 -1 cfs,1,43.5,,0.02,24.5,,,FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+205WUN550,5/6/2013,150,11,0.99,BMI_RWB,2.1,2.1,Trickle (<0.1 cfs),2.5,36.75,,0.005,29.4,,,,Exclude sample,exclude,,FALSE,FALSE
+206DRY810,5/29/2006,100,,0.54,BMI_CSBP_Trans,,,,,,,,,,,,Likely ok,keep,Yes,TRUE,FALSE
+206KRE700,4/28/2004,57,,0.54,BMI_CSBP_Trans,,,,,,,,,"Very low flow, small channel with mature riparian bay/ashe. Cattle seen ~100 yrds from site with access to stream",,,Exclude site,Exclude. Very short reach (too dry?) and cattle suggest nonref. Exclude all samples from site,Yes,FALSE,FALSE
+206MIL090,4/15/2000,,,0.27,BMI_CSBP_Trans,,,,,,,,,,,,Presumed ok,keep,Yes,TRUE,FALSE
+206NAP850,4/29/2006,100,,0.54,BMI_CSBP_Trans,,,,,,,,,,,,Likely ok,keep,Yes,TRUE,FALSE
+206NOV080,4/15/2004,,,0.27,BMI_CSBP_Trans,,,,,,,,,,,,Presumed ok,keep,Yes,TRUE,FALSE
+206NOV080,4/15/2005,,,0.72,BMI_TRC,,,,,,,,,,,,Presumed ok,keep,Yes,TRUE,FALSE
+206NOV080,3/20/2009,,,,,,,,,,,,,,,,Presumed ok,keep,,TRUE,FALSE
+206PIC205,4/28/2000,110,,0.54,BMI_CSBP_Trans,,,,,,,,,high fine sed under armor layer,,,Likely ok,keep,Yes,TRUE,FALSE
+207GVC800,5/23/2013,150,11,0.99,BMI_RWB,1.4,2.3,0.1 -1 cfs,0,33.75,,0.1,5.9,,,FDR (Dry Channel - may apply to single or multiple points/transects),Likely ok,keep,,TRUE,FALSE
+207MTD120,4/3/2003,,,0.27,BMI_CSBP_Trans,,,,,,,,,,,,Presumed ok,keep,Yes,TRUE,FALSE
+207MTD120,5/6/2004,,,0.27,BMI_CSBP_Trans,,,,,,,,,,,,Presumed ok,keep,Yes,TRUE,FALSE
+207MTD120,4/23/2005,,,0.72,BMI_TRC,,,,,,,,,,,,Presumed ok,keep,Yes,TRUE,FALSE
+207MTD120,4/22/2006,,,0.72,BMI_TRC,,,,,,,,,,,,Presumed ok,keep,Yes,TRUE,FALSE
+207MTD120,3/20/2009,,,,,,,,,,,,,,,,Presumed ok,keep,,TRUE,FALSE
+309SLCAAS,5/16/2016,150,11,0.99,BMI_RWB,4.7,4.9,,0,19,,,28.3,,,,Likely ok,keep,,TRUE,FALSE
+309SLCAAS,5/31/2017,150,11,0.99,BMI_RWB,6.9,7.3,,0,1.5,,0.58,53.8,,,,Likely ok,keep,,TRUE,FALSE
+309SLCAAS,5/21/2018,150,11,0.99,BMI_RWB,4.5,5.4,,0,13,,0.46,43.5,,,,Likely ok,keep,,TRUE,FALSE
+309SLCAAS,6/12/2019,150,11,0.99,BMI_RWB,5.7,6.2,,0,3.5,,0.41,51.0,,,,Likely ok,keep,,TRUE,FALSE
+309SLCAAS,6/8/2020,150,11,0.99,BMI_RWB,6.0,6.3,,0,12.75,,,40.7,,,,Likely ok,keep,,TRUE,FALSE
+312NPPCBR,6/1/2017,150,11,0.99,BMI_RWB,2.3,2.6,,0,45.5,,,13.7,,FLV (Velocity too low to be measured),FLV (Velocity too low to be measured) 3 transects were dry,Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+312NPPCBR,5/30/2019,150,11,0.99,BMI_RWB,2.7,2.8,,0,28,,0.23,16.6,,,FLV (Velocity too low to be measured),Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+312NPPCBR,6/16/2020,150,8,0.72,BMI_RWB,,,,0,0,,,,3 dry transects,,FLV (Velocity too low to be measured),Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+504R5NPHG,3/18/2019,150,11,0.99,BMI_RWB,1.7,2.0,,11,25.25,0.014,0.2,29.8,,,,Exclude sample,Exclude (dry). Maybe SFI,,FALSE,FALSE
+509R5NP3F,3/19/2019,150,11,0.99,BMI_RWB,1.4,1.6,,0,6.25,0.309,0.68,14.4,,,,Likely ok,keep,,TRUE,FALSE
+509R5NP3F,4/23/2019,150,11,0.99,BMI_RWB,1.6,1.6,,0,9.25,0.067,,10.3,,,,Likely ok,keep,,TRUE,FALSE
+509R5NP3F,5/21/2019,150,11,0.99,BMI_RWB,1.2,1.6,,0,24.5,0.024,0.08,14.2,,,,Likely ok,keep,,TRUE,FALSE
+509R5NPLG,3/19/2019,150,11,0.99,BMI_RWB,3.3,3.9,,0,18.5,0.278,0.27,23.3,,,,Likely ok,keep,,TRUE,FALSE
+509R5NPLG,4/23/2019,150,11,0.99,BMI_RWB,2.8,3.2,,0,28.5,0.064,0.18,19.4,,,,Likely ok,keep,,TRUE,FALSE
+509R5NPLG,5/20/2019,150,11,0.99,BMI_RWB,3.2,3.6,,0,19.5,0.135,0.17,21.1,,,,Likely ok,keep,,TRUE,FALSE
+509R5NPSC,3/19/2019,150,11,0.99,BMI_RWB,1.7,1.8,,0,21.5,0.012,0.06,12.7,,,,Likely ok,keep,,TRUE,FALSE
+509R5NPSH,3/19/2019,150,11,0.99,BMI_RWB,1.0,1.1,,0,3.5,0.377,0.76,8.0,,,,Likely ok,keep,,TRUE,FALSE
+509R5NPSH,4/23/2019,150,11,0.99,BMI_RWB,0.8,0.9,,0,4.75,0.375,,11.9,,,,Likely ok,keep,,TRUE,FALSE
+509R5NPSH,5/22/2019,150,11,0.99,BMI_RWB,0.8,0.8,,0,41.5,0.015,0.06,8.3,,,,Likely ok,keep,,TRUE,FALSE
+512ZZMAEC,5/31/2016,150,11,0.99,BMI_RWB,3.6,3.8,,0,37.5,,,11.4,,FLV (Velocity too low to be measured),FLV (Velocity too low to be measured),Likely ok,keep,,TRUE,FALSE
+512ZZMAEC,5/25/2017,150,11,0.99,BMI_RWB,4.2,5.0,,0,17,,0.36,22.9,,,FLV (Velocity too low to be measured),Likely ok,keep,,TRUE,FALSE
+512ZZMAEC,5/31/2018,150,11,0.99,BMI_RWB,2.0,2.1,,0,45,,,11.5,,FLV (Velocity too low to be measured),FLV (Velocity too low to be measured),Likely ok,keep,,TRUE,FALSE
+512ZZMAEC,6/17/2019,150,11,0.99,BMI_RWB,4.3,5.1,,0,32.5,,,21.0,,FLV (Velocity too low to be measured),FLV (Velocity too low to be measured),Likely ok,keep,,TRUE,FALSE
+514PS0090,6/27/2016,150,11,0.99,BMI_RWB,3.6,3.5,,0,16.5,,1.2,17.1,Site was moved above road crossing,,FDR (Dry Channel - may apply to single or multiple points/transects),Likely ok,keep,,TRUE,FALSE
+514PS0090,8/28/2017,150,11,0.99,BMI_RWB,2.2,2.1,,20,50,,,6.1,,FLV (Velocity too low to be measured),FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+514PS0090,5/29/2018,150,11,0.99,BMI_RWB,4.4,4.5,,0,3.5,,0.42,28.8,,,FDR (Dry Channel - may apply to single or multiple points/transects),Likely ok,keep,,TRUE,FALSE
+514PS0090,7/15/2019,150,11,0.99,BMI_RWB,4.7,4.7,,0,2,,1.14,17.3,,,FDR (Dry Channel - may apply to single or multiple points/transects),Likely ok,keep,,TRUE,FALSE
+514PS0090,6/10/2020,150,11,0.99,BMI_RWB,5.1,5.2,,0,1.5,2.97,1.3,24.6,,,FDR (Dry Channel - may apply to single or multiple points/transects),Likely ok,keep,,TRUE,FALSE
+514PS0090,5/12/2021,150,11,0.99,BMI_RWB,5.7,5.5,,0,1.5,0.544,0.56,24.0,,,FDR (Dry Channel - may apply to single or multiple points/transects),Likely ok,keep,,TRUE,FALSE
+514PS0090,6/16/2021,150,11,0.99,BMI_RWB,2.5,2.5,,18,39.5,,,7.8,,FLV (Velocity too low to be measured),FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+517R5NPMG,3/21/2019,150,11,0.99,BMI_RWB,1.8,1.8,,0,10,0.079,0.15,7.5,,,FDR (Dry Channel - may apply to single or multiple points/transects),Likely ok,keep,,TRUE,FALSE
+517R5NPMG,5/1/2019,150,11,0.99,BMI_RWB,1.4,1.5,,0,25.5,,,7.2,,FLV (Velocity too low to be measured),FDR (Dry Channel - may apply to single or multiple points/transects),Likely ok,keep,,TRUE,FALSE
+517R5NPMG,5/14/2019,150,11,0.99,BMI_RWB,0.8,0.9,,50,49,,,3.4,"3 transects were dry, so bmi was collected at inter-tran; gh, hi, jk",FLV (Velocity too low to be measured),FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,"Exclude due to discontinuous flow, super shallow",,FALSE,FALSE
+533R5NPSC,3/21/2019,150,11,0.99,BMI_RWB,5.6,5.9,,0,27.5,0.414,0.2,27.1,,,FLV (Velocity too low to be measured),Likely ok,keep,,TRUE,FALSE
+533R5NPSC,4/25/2019,150,11,0.99,BMI_RWB_MCM,3.3,17.7,,0,31.5,0.225,1.02,19.9,,,FLV (Velocity too low to be measured),Likely ok,keep,,TRUE,FALSE
+533R5NPSC,5/15/2019,150,11,0.99,BMI_RWB,2.7,3.6,,0,38.5,,,18.8,,FLV (Velocity too low to be measured),FLV (Velocity too low to be measured),Likely ok,keep,,TRUE,FALSE
+533R5NPSC,3/24/2021,150,11,0.99,BMI_RWB,3.9,4.3,,0,29,0.38,0.31,18.9,,,FLV (Velocity too low to be measured),Likely ok,keep,,TRUE,FALSE
+537R5NPFA,3/25/2019,150,11,0.99,BMI_RWB_MCM,4.4,5.4,,0,2,2.187,2.29,35.1,,,FLV (Velocity too low to be measured),Likely ok,keep,,TRUE,FALSE
+537R5NPFA,4/24/2019,150,11,0.99,BMI_RWB_MCM,3.6,4.1,,0,1,0.034,0.29,30.8,,,FLV (Velocity too low to be measured),Likely ok,keep,,TRUE,FALSE
+537R5NPFA,7/2/2019,150,11,0.99,BMI_RWB,3.4,3.8,,0,28.5,0.156,0.64,28.4,,,FLV (Velocity too low to be measured),Likely ok,keep,,TRUE,FALSE
+537R5NPFA,7/31/2019,150,11,0.99,BMI_RWB,2.7,3.0,,0,26,,,22.6,,,FLV (Velocity too low to be measured),Likely ok,keep,,TRUE,FALSE
+537R5NPFA,3/22/2021,150,11,0.99,BMI_RWB,3.4,3.7,,0,2.75,1.14,0.98,37.1,"Started slightly downstream from previous 2020 AA, ild A transect now F.",,FLV (Velocity too low to be measured),Likely ok,keep,,TRUE,FALSE
+537R5NPFA,4/19/2021,150,11,0.99,BMI_RWB,2.4,2.5,,0,6.5,0.234,0.61,14.0,Fish present; more riparian coverage in comparison to visit 1; heavy algae.,,FLV (Velocity too low to be measured),Likely ok,keep,,TRUE,FALSE
+537R5NPFA,5/17/2021,150,11,0.99,BMI_RWB,1.5,1.9,,0,21.25,,,22.8,,FLV (Velocity too low to be measured),FLV (Velocity too low to be measured),Likely ok,keep,,TRUE,FALSE
+543KEL030,4/3/2002,,,0.27,BMI_CSBP_Trans,,,,,,,,,,,,Presumed ok,keep,,TRUE,FALSE
+543KEL030,4/15/2003,,,0.27,BMI_CSBP_Trans,,,,,,,,,,,,Presumed ok,keep,,TRUE,FALSE
+543KEL030,3/20/2009,,,,,,,,,,,,,,,,Presumed ok,keep,,TRUE,FALSE
+ALC29.49,4/23/2013,150,,0.99,BMI_RWB,6.5,6.8,,19,33.25,,0.65,29.1,,,FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+ALC29.49,5/19/2014,150,,0.99,BMI_RWB,6.0,6.1,,17.5,38,,0.36,23.9,,,FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+ALC29.49,5/18/2015,150,,0.99,BMI_RWB,6.2,6.5,,18,27.25,,0.22,45.2,,,FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+ALC29.49,5/17/2016,150,,0.99,BMI_RWB,7.3,1.4,,8,9.75,,,33.8,,,FDR (Dry Channel - may apply to single or multiple points/transects),Likely ok,keep,,TRUE,FALSE
+ALC29.49,6/20/2017,150,,0.99,BMI_RWB,7.6,8.1,,18,30.75,,0.52,25.5,,,FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+ALC29.49,5/30/2018,150,,0.99,BMI_RWB,6.8,6.5,,14,30,,0.59,25.8,,,FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+ALC29.49,6/18/2019,150,,0.99,BMI_RWB,6.7,7.3,,10.5,22.25,,1.36,23.1,,,FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+ALC29.49,7/8/2020,150,,0.99,BMI_RWB,4.2,4.3,,14,45.9,,,18.8,,,FDR (Dry Channel - may apply to single or multiple points/transects),Exclude sample,Exclude due to discontinuous flow,,FALSE,FALSE
+202BUT600,6/14/2017,150,11,0.99,BMI_RWB,2.5,2.6,,0,18.75,,,21.9,"Moved site 300m d/s. Channel filled w/ LWD jams, difficult to move up channel",,,Likely ok,keep,,TRUE,FALSE
+309CAW174,5/6/2015,150,11,0.99,BMI_RWB,1.3,1.5,,0,43.5,,,13.1,,FLV (Velocity too low to be measured),FLV (Velocity too low to be measured),Likely ok,keep,,TRUE,FALSE
+513PS0008,9/1/2010,150,11,0.99,BMI_RWB,3.0,3.3,,0,41,,0.31,19.6,,,,Likely ok,keep,,TRUE,FALSE
+552FCA017,7/30/2013,,10,0.9,BMI_RWB,,,,,,,,,1 dry transect,,,Presumed ok,keep,NRSA site,TRUE,FALSE
