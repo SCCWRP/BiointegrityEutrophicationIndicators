@@ -1,13 +1,13 @@
 "Index","Term","DF","SS","MS","F","p"
-"CSCI","Flow status",1,0.227,0.2275,9.7,0.002
-"CSCI","Region",1,0.218,0.2178,9.3,0.003
-"CSCI","Flow status:Region",1,0.068,0.0685,2.9,0.088
-"CSCI","Residuals",254,5.933,0.0234,,
-"ASCI_D","Flow status",1,0.016,0.0155,1,0.314
-"ASCI_D","Region",1,0.118,0.1181,7.8,0.006
-"ASCI_D","Flow status:Region",1,0.001,0.0014,0.1,0.761
-"ASCI_D","Residuals",160,2.436,0.0152,,
-"ASCI_H","Flow status",1,0.019,0.0193,1.3,0.248
-"ASCI_H","Region",1,0.031,0.0306,2.1,0.146
-"ASCI_H","Flow status:Region",1,0.003,0.0033,0.2,0.633
-"ASCI_H","Residuals",159,2.278,0.0143,,
+"CSCI","Flow status",1,0.259,0.259,11.3,0.001
+"CSCI","Region",1,0.268,0.2678,11.7,0.001
+"CSCI","Flow status:Region",1,0.105,0.105,4.6,0.033
+"CSCI","Residuals",249,5.692,0.0229,,
+"ASCI_D","Flow status",1,0.013,0.0128,0.8,0.362
+"ASCI_D","Region",1,0.113,0.1128,7.4,0.007
+"ASCI_D","Flow status:Region",1,0.002,0.0015,0.1,0.751
+"ASCI_D","Residuals",158,2.423,0.0153,,
+"ASCI_H","Flow status",1,0.014,0.0137,1,0.33
+"ASCI_H","Region",1,0.022,0.0219,1.5,0.218
+"ASCI_H","Flow status:Region",1,0.007,0.0068,0.5,0.492
+"ASCI_H","Residuals",157,2.25,0.0143,,

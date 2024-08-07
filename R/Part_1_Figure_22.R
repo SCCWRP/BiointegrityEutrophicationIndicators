@@ -7,7 +7,7 @@ nonperen_df <- readr::read_csv("data-raw/Part_1_Andy_Nonperen_data_ASCI.csv") |>
     sampledate = lubridate::mdy(SampleDate)
   )
 
-sample_exclusion <- readr::read_csv('data-raw/Part_1_sample_metadata_review_06252024.csv') |>
+sample_exclusion <- readr::read_csv('data-raw/Part_1_sample_metadata_review_07152024.csv') |>
   filter(!Include) |>
   mutate(sampledate = lubridate::mdy(SampleDate))
 

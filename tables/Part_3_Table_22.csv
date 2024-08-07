@@ -2,9 +2,9 @@
 "Reference","Wadeable (standard)","ASCI_D","Yes",418,0.94,0.86,0.75
 "Reference","Wadeable (standard)","ASCI_H","Yes",418,0.94,0.86,0.75
 "Reference","Wadeable (standard)","CSCI","Yes",473,0.92,0.79,0.63
-"Reference","RFI-N","ASCI_D","Yes",18,0.99,0.9,0.79
-"Reference","RFI-N","ASCI_H","Yes",18,0.97,0.9,0.81
-"Reference","RFI-N","CSCI","No",43,0.75,0.62,0.44
+"Reference","RFI-N","ASCI_D","Yes",16,0.98,0.9,0.78
+"Reference","RFI-N","ASCI_H","Yes",16,0.96,0.9,0.81
+"Reference","RFI-N","CSCI","No",38,0.73,0.61,0.44
 "Reference","RFI-S","ASCI_D","Yes",45,0.91,0.8,0.66
 "Reference","RFI-S","ASCI_H","Yes",45,0.91,0.8,0.65
 "Reference","RFI-S","CSCI","Yes",53,0.89,0.82,0.71
